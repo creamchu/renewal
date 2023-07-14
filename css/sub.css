@@ -1,0 +1,19 @@
+@charset "utf-8";
+
+/**
+ * --------------------------------
+ * sub Page CSS
+ * creator : chowoobin
+ * --------------------------------
+*/
+
+/* 회원가입, 약관동의 */
+.join {padding:20px 16px;}
+.join_titlebox {margin-bottom:30px;}
+.join_titlebox dl {display:flex;align-items:center;justify-content:center;gap:8px;padding:13px 10px;background-color:#f2f2f2;border-radius:4px;}
+.join_titlebox dt {color:#000;font-size:14px;font-weight:800;}
+.join_titlebox dd {color:#1b45b3;font-size:14px;font-weight:800;}
+.join_agree .box + .box {margin-top:30px;}
+.join_agree .box .tit {font-size:15px;}
+.join_agree .box .cont {height:160px;margin-top:8px;padding:16px;background-color:#fff;color:#898989;font-size:12px;line-height:1.5;border:solid 1px #e4e4e4;border-radius:5px;overflow-y:scroll;}
+.join_agree .box .txt {margin-top:13px;}

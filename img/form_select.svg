@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+    <defs>
+        <clipPath id="ay1n2p7xra">
+            <path data-name="사각형 1" style="fill:#fff;stroke:#707070" d="M0 0h16v16H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="&gt;" style="clip-path:url(#ay1n2p7xra)">
+        <path data-name="패스 2" d="m420.505 585.187 5.56 5.56 5.56-5.56" transform="translate(-418.653 -579.713)" style="fill:none;stroke:#a7a7a7;stroke-linecap:round"/>
+    </g>
+</svg>
