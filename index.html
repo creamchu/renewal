@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <title>메디힐 한국일보 챔피언십 INDEX</title>
+  <style>
+    body {margin:0;padding:0;font-family:Malgun Gothic, "맑은 고딕", Dotum, "돋움", sans-serif;}
+    .guideindex {margin-bottom:100px;padding:20px 10px 40px;background:#fff;color:#555;}
+    .guideindex h1 {margin:20px 0 30px;color:#0056a6;font-size:26px;font-weight:600;text-align:center;}
+    .guide_table {width:100%;min-width:980px;margin:0 auto;text-align:left;border-top:2px #0056a6 solid;border-collapse:collapse;border-right:1px #dedede solid;border-bottom:1px #ccc solid;box-sizing: border-box;}
+    .guide_table tr > th,
+    .guide_table tr > td {padding:10px 8px;font-size:13px;border-left:1px #dedede solid;border-top:1px #dedede solid;vertical-align:top;}
+    .guide_table thead {border-bottom:1px #ccc solid;text-align:center;}
+    .guide_table thead tr:first-child > th,
+    .guide_table tbody tr:first-child > th,
+    .guide_table tbody tr:first-child > td {border-top:none;}
+    .guide_table thead tr > th {background:#eee;color:#555;font-size:13px;font-weight:600;vertical-align:middle;}
+    .guide_table tbody th {font-weight:normal;text-align:center;}
+    .guide_table tbody tr {position:relative;}
+    .guide_table tbody tr:hover {background:#ccdee9;}
+    .guide_table a {color:#555;text-decoration:none;}
+    .guide_table a:hover {color:#0056a6;}
+    .guide_table tr.common {background:#f4fbff;}
+    .guide_table tr.del * {background:#555 !important;color:#999;border-color:#555;}
+    .guide_table tr.overlap * {background:#efefef !important;color:#888;}
+    .guide_table tr.overlap .caution {color:#888;}
+    .guide_table td.complete {text-align:center;}
+    .guide_table td.caution {color:#f00;font-size:12px;text-align:left;}
+  </style>
+    
+  <script src="js/jquery_2.1.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      var index = 0;
+      $(".num").each(function(){
+        if(!($(this).closest("tr").hasClass("del") || $(this).closest("tr").hasClass("overlap"))){
+          index+=1;
+          $(this).text(index);
+        }
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="guideindex">
+    <h1>메디힐 한국일보 챔피언십 INDEX</h1>
+
+    <table class="guide_table">
+      <colgroup>
+        <col style="width:4%" />
+        <col style="width:9%" />
+        <col style="width:17%" />
+        <col style="width:13%" />
+        <col style="width:13%" />
+        <col style="width:9%" />
+        <col style="width:auto" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">1Depth</th>
+          <th scope="col">2Depth</th>
+          <th scope="col">3Depth</th>
+          <th scope="col">화면ID 및 파일명</th>
+          <th scope="col">완료일</th>
+          <th scope="col">수정사항</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td rowspan="5">회원가입</td>
+          <td>03_회원가입_01_그룹선택</td>
+          <td></td>
+          <td><a href="html/join_group.html" target="_blank">join_group.html</a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>03_회원가입_03_동의</td>
+          <td></td>
+          <td><a href="html/join_agree.html" target="_blank">join_agree.html</a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>03_회원가입_04_정보입력_01</td>
+          <td></td>
+          <td><a href="html/join_step1.html" target="_blank">join_step1.html</a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>03_회원가입_04_정보입력_02,<br>03_회원가입_04_정보입력_02_02</td>
+          <td></td>
+          <td><a href="html/join_step2.html" target="_blank">join_step2.html</a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>03_회원가입_04_정보입력_03</td>
+          <td></td>
+          <td><a href="html/join_step3.html" target="_blank">join_step3.html</a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td rowspan="13">메인</td>
+          <td>04_메인_02_배차신청</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_02_배차신청_02_배차현황_01_신청자_01_신청</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_02_배차신청_02_배차현황_02_드라이버_01_신청</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_03_E폼_01</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_04_리서치_02</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓_01_리스트</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓_01_예매하기</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓_02_예매내역</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓_02_예매내역_02_상세</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓_03_선물함_01_받은선물함</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓_03_선물함_02_보낸선물함</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>04_메인_05_티켓_03_선물함_03_선물하기</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td rowspan="2">MY</td>
+          <td>05_MY(QR)_A</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>05_MY(QR)_02_회원정보</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td rowspan="3">MY</td>
+          <td>07_NOTICE_01_공지사항</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>07_NOTICE_03_QNA</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>07_NOTICE_03_QNA_02_답변</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>STORAGE</td>
+          <td>08_STORAGE_05_차량배차내역</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td rowspan="2">이벤트</td>
+          <td>09_[MW]이벤트_02_응모</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr class="upcomplete">
+          <th scope="row" class="num"></th>
+          <td>09_[MW]이벤트_01_응모_03_이용약관</td>
+          <td></td>
+          <td><a href="html/.html" target="_blank"></a></td>
+          <td class="complete"></td>
+          <td class="caution">
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>
