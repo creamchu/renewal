@@ -63,7 +63,7 @@ input:focus::placeholder{color:transparent}
 
 /* input checkbox */
 input[type="checkbox"] {position:absolute;width:0;height:0;font-size:0;line-height:0;opacity:0;overflow:hidden;}
-input[type="checkbox"] + span {display:inline-block;position:relative;min-height:20px;padding-left:26px;line-height:20px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;vertical-align:top;}
+input[type="checkbox"] + span {display:inline-block;position:relative;min-height:20px;padding-left:26px;line-height:22px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;vertical-align:top;}
 input[type="checkbox"] + span:before {content:"";display:inline-block;position:absolute;top:0;left:0;width:20px;height:20px;background:url("../img/form_chk.svg") no-repeat 0 0;background-position-y:0;background-size:100%;}
 input[type="checkbox"]:checked + span:before {background-image:url("../img/form_chk_checked.svg");}
 input[type="checkbox"]:disabled + span:before {background-image:url("../img/form_chk_disable.svg");}
@@ -73,7 +73,7 @@ input[type="checkbox"]:checked:disabled + span {cursor:default;}
 
 /* input radio */
 input[type="radio"] {position:absolute;width:0;height:0;font-size:0;line-height:0;opacity:0;overflow:hidden;}
-input[type="radio"] + span {display:inline-block;position:relative;min-height:20px;padding-left:26px;line-height:20px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;vertical-align:top;}
+input[type="radio"] + span {display:inline-block;position:relative;min-height:20px;padding-left:26px;line-height:22px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;vertical-align:top;}
 input[type="radio"] + span:before {content:"";display:inline-block;position:absolute;top:0;left:0;width:20px;height:20px;background:url("../img/form_rdo.svg") no-repeat 0 0;background-position-y:0;background-size:100%;}
 input[type="radio"]:checked + span:before {background-image:url("../img/form_rdo_checked.svg");}
 input[type="radio"]:disabled + span:before {background-image:url("../img/form_rdo_disable.svg");}
