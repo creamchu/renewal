@@ -39,7 +39,7 @@ em, address, del{font-style:normal;}
 a{display:inline-block;}
 strong, em{font-weight:600;}
 /* form */
-input,select,label,textarea{border-radius:0;-webkit-border-radius:0;background-color:transparent;color:#232323;font-size:14px;line-height:normal;font-family:'SCoreDream','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;vertical-align:middle;}
+input,select,label,textarea{border-radius:0;-webkit-border-radius:0;background-color:transparent;color:#000;font-size:14px;line-height:normal;font-family:'SCoreDream','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;vertical-align:middle;}
 input[type='text'],input[type='password'],input[type='submit'],input[type='search']{-webkit-appearance:none;border-radius:0}
 input:checked[type='checkbox']{-webkit-appearance:checkbox;}
 input[type='button'],input[type='submit'],input[type='reset'],input[type='file']{-webkit-appearance:button;border-radius:0;border:0 none;background-color:transparent;cursor:pointer;}
@@ -50,14 +50,14 @@ address,caption{font-style:normal;font-weight:normal}
 table{width:100%;border-collapse:collapse;border-spacing:0;}
 th, td{word-break:keep-all;word-wrap:break-word;}
 /* alink */
-a{color:#333;border:0;text-decoration:none;}
+a{color:#000;border:0;text-decoration:none;}
 a:hover{text-decoration:none;}
 a:active,a:hover{text-decoration:none}
 *, *:before, *:after{box-sizing:border-box;}
 
 /* body, html */
 html{height:100%;}
-body{height:100%;font-family:'SCoreDream','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;font-weight:normal;font-size:14px;color:#333;line-height:1;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;}
+body{height:100%;font-family:'SCoreDream','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;font-weight:normal;font-size:14px;color:#000;line-height:1;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;}
 
 /* 대체텍스트 and 숨김처리 */
 caption, legend, .hidden, .hide{position:absolute !important;top:0 !important;left:0 !important;padding:0 !important;border:0 !important;overflow:hidden !important;width:0 !important;height:0 !important;line-height:0 !important;}

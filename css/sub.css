@@ -7,13 +7,32 @@
  * --------------------------------
 */
 
-/* 회원가입, 약관동의 */
-.join {padding:20px 16px;}
+/* 회원가입 > 공통 */
+.content.join {padding:20px 16px;}
+.content.join .h3_tit {margin-top:20px;}
+.content.join .category_list {margin:0 -16px;border-top:1px solid #e3e3e3;}
 .join_titlebox {margin-bottom:30px;}
 .join_titlebox dl {display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px 12px;background-color:#f2f2f2;border-radius:4px;}
 .join_titlebox dt {color:#000;font-size:14px;font-weight:600;}
 .join_titlebox dd {color:#1b45b3;font-size:14px;font-weight:600;}
+
+/* 회원가입 > 약관동의 */
 .join_agree .box + .box {margin-top:30px;}
-.join_agree .box .tit {font-size:15px;}
+.join_agree .box .tit {color:#232323;font-size:15px;}
 .join_agree .box .cont {height:160px;margin-top:8px;padding:16px;background-color:#fff;color:#898989;font-size:12px;line-height:1.5;border:solid 1px #e4e4e4;border-radius:5px;overflow-y:scroll;}
 .join_agree .box .txt {margin-top:13px;}
+
+/* 티켓 > 공통 */
+.content.ticket {padding:0;}
+
+/* 티켓 > 예매하기 */
+.ticket_list:before {content:"";display:block;width:100%;height:8px;background:#f2f2f2;}
+.ticket_list > li {border-bottom:1px solid #e3e3e3;}
+.ticket_list > li > a {display:block;position:relative;padding:20px 16px;}
+.ticket_list > li > a:after {content:"";position:absolute;top:50%;right:16px;width:20px;height:20px;margin-top:-10px;background:url('../img/ico_arrow_blue.svg') no-repeat 0 0;}
+.ticket_list .state {color:#565656;font-size:13px;}
+.ticket_list .state.blue {color:#0056a6;}
+.ticket_list .tit {display:block;margin-top:9px;color:#000;font-size:16px;}
+.ticket_list .sub {margin-top:10px;color:#565656;font-size:14px;}
+.ticket_list .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
+.ticket_list .date {margin-top:12px;color:#898989;font-size:13px;}
