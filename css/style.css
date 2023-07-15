@@ -19,7 +19,7 @@
 .color_gray {color:#B3B3B3 !important;}
 
 /* btn */
-.btn {display:inline-block;position:relative;min-width:80px;height:40px;line-height:40px;padding:0 5px;background-color:#fff;color:#1b45b3;font-size:14px;font-weight:800;text-align:center;vertical-align:middle;  border:1px solid #0056a6;border-radius:5px;}
+.btn {display:inline-block;position:relative;min-width:80px;height:40px;line-height:40px;padding:0 5px;background-color:#fff;color:#0056a6;font-size:14px;font-weight:600;text-align:center;vertical-align:middle;  border:1px solid #0056a6;border-radius:5px;}
 .btn:disabled {background:#E1E1E1 !important;color:#fff;border-color:#E1E1E1 !important;pointer-events:none;}
 .btn.full {width:100%;}
 .btn.small {min-width:auto;height:22px;line-height:22px;padding:0 8px;font-size:12px;}
@@ -44,7 +44,7 @@
 .btn_grp.col3 .btn:nth-of-type(n+4) {margin-top:12px;}
 
 /* title */
-.h2-title {margin-top:48px;padding-bottom:24px;font-size:36px;font-weight:800;}
+.h2-title {margin-top:48px;padding-bottom:24px;font-size:36px;font-weight:600;}
 
 /* text */
 .gray-text {color:#B3B3B3;font-size:14px;line-height:24px;}
@@ -114,11 +114,11 @@ select::-ms-expand {display:none;}
 
 /* layout */
 .header {position:sticky;top:0;height:70px;background:#fff;border-bottom:1px solid #efefef;z-index:10;}
-.header .logo {height:44px;line-height:44px;color:#fff;font-size:16px;font-weight:800;text-align:center;}
+.header .logo {height:44px;line-height:44px;color:#fff;font-size:16px;font-weight:600;text-align:center;}
 .header .header_tit {display:flex;align-items:center;justify-content:center;height:70px;}
-.header .tit {line-height:1.56;color:#000;font-size:18px;font-weight:800;}
+.header .tit {line-height:1.56;color:#000;font-size:18px;font-weight:600;}
 .header .btn_prev {position:absolute;top:0;left:0;width:56px;height:70px;background:url('../img/header_prev.png') no-repeat 50% 50%/24px;}
-.header .btn_qna {position:absolute;top:23px;right:8px;padding:5px;color:#1b45b3;font-size:16px;font-weight:800;}
+.header .btn_qna {position:absolute;top:23px;right:8px;padding:5px;color:#1b45b3;font-size:16px;font-weight:600;}
 
 .bottom_area {position:fixed;bottom:0;left:0;width:100%;background:#fff;padding:0 16px 20px;}
 .bottom_area .btn:first-child:last-child {width:100%;font-size:16px;}

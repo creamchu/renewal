@@ -8,22 +8,22 @@
 */
 /* 웹폰트 */
 @font-face{
-  font-family:"NanumSquare";
+  font-family:"SCoreDream";
   font-style:normal;
   font-weight:normal;
-  src:url("../font/NanumSquareB.eot");
-  src:url("../font/NanumSquareB.eot?#iefix") format("embedded-opentype"),
-      url("../font/NanumSquareB.woff2") format("woff2"),
-      url("../font/NanumSquareB.woff") format("woff");
+  src:url("../font/SCoreDream5.eot");
+  src:url("../font/SCoreDream5.eot?#iefix") format("embedded-opentype"),
+      url("../font/SCoreDream5.woff2") format("woff2"),
+      url("../font/SCoreDream5.woff") format("woff");
 }
 @font-face{
-  font-family:"NanumSquare";
+  font-family:"SCoreDream";
   font-style:normal;
-  font-weight:800;
-  src:url("../font/NanumSquareEB.eot");
-  src:url("../font/NanumSquareEB.eot?#iefix") format("embedded-opentype"),
-      url("../font/NanumSquareEB.woff2") format("woff2"),
-      url("../font/NanumSquareEB.woff") format("woff");
+  font-weight:600;
+  src:url("../font/SCoreDream6.eot");
+  src:url("../font/SCoreDream6.eot?#iefix") format("embedded-opentype"),
+      url("../font/SCoreDream6.woff2") format("woff2"),
+      url("../font/SCoreDream6.woff") format("woff");
 }
 
 html,body,div,p,iframe,frameset, h1,h2,h3,h4,h5,h6, strong,span,b,em,var,label,legend, ul,ol,li,dl,dt,dd,
@@ -32,14 +32,14 @@ header,footer,section,article,aside,figure,figcaption{padding:0;margin:0;}
 /* 목록 스타일 리셋 */
 ul, ol, li{list-style:none;}
 /* 태그 리셋 */
-button{background:transparent;border:none;cursor:pointer;}
+button{background:transparent;font-family:'SCoreDream','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;vertical-align:middle;border:none;cursor:pointer;}
 img{vertical-align:top;}
 img,fieldset,table{border:0;}
 em, address, del{font-style:normal;}
 a{display:inline-block;}
-strong, em{font-weight:800;}
+strong, em{font-weight:600;}
 /* form */
-input,select,label,textarea{border-radius:0;-webkit-border-radius:0;background-color:transparent;color:#232323;font-size:14px;line-height:normal;font-family:'NanumSquare','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;vertical-align:middle;}
+input,select,label,textarea{border-radius:0;-webkit-border-radius:0;background-color:transparent;color:#232323;font-size:14px;line-height:normal;font-family:'SCoreDream','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;vertical-align:middle;}
 input[type='text'],input[type='password'],input[type='submit'],input[type='search']{-webkit-appearance:none;border-radius:0}
 input:checked[type='checkbox']{-webkit-appearance:checkbox;}
 input[type='button'],input[type='submit'],input[type='reset'],input[type='file']{-webkit-appearance:button;border-radius:0;border:0 none;background-color:transparent;cursor:pointer;}
@@ -57,7 +57,7 @@ a:active,a:hover{text-decoration:none}
 
 /* body, html */
 html{height:100%;}
-body{height:100%;font-family:'NanumSquare','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;font-weight:normal;font-size:14px;color:#333;line-height:1;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;}
+body{height:100%;font-family:'SCoreDream','돋움','dotum','AppleGothic','AppleSDGothicNeo','Helvetica',sans-serif;font-weight:normal;font-size:14px;color:#333;line-height:1;-webkit-text-size-adjust:none;-moz-text-size-adjust:none;-ms-text-size-adjust:none;-o-text-size-adjust:none;}
 
 /* 대체텍스트 and 숨김처리 */
 caption, legend, .hidden, .hide{position:absolute !important;top:0 !important;left:0 !important;padding:0 !important;border:0 !important;overflow:hidden !important;width:0 !important;height:0 !important;line-height:0 !important;}
