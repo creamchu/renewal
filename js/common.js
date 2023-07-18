@@ -15,6 +15,9 @@ var fn = (function() {
 
 			//select
 			fn.select();
+
+			//tab
+			fn.tab();
 		},
 
 		//bottomarea: function(){
@@ -45,8 +48,17 @@ var fn = (function() {
 					}
 				}
 			});
+		},
 
-			
+		//tab
+		tab : function(){
+		$(document).on("click", ".tab .tab_menu a", function() {
+			var $menu = $(this).closest("li"),
+				i = $menu.index();
+
+			$menu.addClass("is_active").siblings().removeClass("is_active");
+			$(".tab .tab_cont .tab_item").eq(i).addClass("is_active").siblings().removeClass("is_active");
+		});
 		},
 
 	}
