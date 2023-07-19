@@ -10,21 +10,21 @@ var fn = (function() {
 	return {
 		//공통
 		common : function(){
-			//bottomarea
-			fn.bottomarea();
 
 			//select
 			fn.select();
 
+			//optionEaUp
+			fn.optionEaUp();
+
+			//optionEaDown
+			fn.optionEaDown();
+
 			//tab
 			fn.tab();
-		},
 
-		//bottomarea: function(){
-		bottomarea : function(){
-			if($(".bottom_area").length > 0) {
-				$(".content").addClass("is_bottom_area");
-			}
+			//bottomarea
+			fn.bottomarea();
 		},
 
 		//select
@@ -50,15 +50,83 @@ var fn = (function() {
 			});
 		},
 
+		//optionEaUp
+		optionEaUp : function(obj){
+			var $obj = $(obj),
+					eaVal = parseInt($obj.siblings("input").val()),
+					max = parseInt($obj.siblings("input").attr("max")) || 0;
+
+					$obj.siblings('.btn_down').addClass("is_active");
+			if ( max ){
+				if ( eaVal < max ){
+					eaVal++;
+				}
+			}else{
+				eaVal++;
+			}
+				$obj.siblings("input").val(eaVal);
+
+				if ( eaVal == max ) {
+					$obj.addClass("is_stop");
+				}
+		},
+
+		//optionEaDown
+		optionEaDown : function(obj){
+			var $obj = $(obj),
+					eaVal = parseInt($obj.siblings("input").val()),
+					min = parseInt($obj.siblings("input").attr("min")) || 0;
+
+			$obj.siblings('.btn_up').removeClass("is_stop");
+
+			if ( $obj.siblings("input[min]").length ){
+				if ( eaVal > min ){
+					eaVal--;
+				}
+			}else{
+				if ( eaVal > 1 ){
+					eaVal--;
+				}
+			}
+			$obj.siblings("input").val(eaVal);
+			if( eaVal == 1 ){
+				$obj.removeClass("is_active");
+			}
+		},
+
 		//tab
 		tab : function(){
-		$(document).on("click", ".tab .tab_menu a", function() {
-			var $menu = $(this).closest("li"),
-				i = $menu.index();
+			$(document).on("click", ".tab .tab_menu a", function() {
+				var $menu = $(this).closest("li"),
+					i = $menu.index();
 
-			$menu.addClass("is_active").siblings().removeClass("is_active");
-			$(".tab .tab_cont .tab_item").eq(i).addClass("is_active").siblings().removeClass("is_active");
-		});
+				$menu.addClass("is_active").siblings().removeClass("is_active");
+				$(".tab .tab_cont .tab_item").eq(i).addClass("is_active").siblings().removeClass("is_active");
+			});
+		},
+
+		//bottomarea
+		bottomarea : function(){
+			if($(".bottom_area").length > 0) {
+				$(".content").addClass("is_bottom_area");
+			}
+		},
+
+		//popupOpen
+		popupOpen : function(obj){
+			$("body").addClass("pop_open");
+
+			var $this = $(obj);
+			$this.addClass("is_open");
+
+		},
+
+		//popupClose
+		popupClose : function(obj){
+			$("body").removeClass("pop_open");
+			
+			var $this = $(obj);
+			$this.closest(".popup").removeClass("is_open");
 		},
 
 	}
