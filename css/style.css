@@ -230,6 +230,7 @@ select::-ms-expand {display:none;}
 /* payment */
 .payment {padding:30px 16px 50px;}
 .payment .h3_tit {margin-bottom:0;padding-bottom:13px;font-size:16px;line-height:normal;border-bottom:1px solid #e3e3e3;}
+.payment .h3_tit.no_bd {border-bottom:none;}
 .payment .btn_group {margin-top:40px;}
 .payment .btn_group .btn:first-child {width:30%;}
 .payment .btn_group .btn:last-child {width:70%;}
@@ -249,3 +250,11 @@ select::-ms-expand {display:none;}
 .payment_agree li .head {color:#565656;font-size:13px;}
 .payment_agree li .btn_arrow {float:right;position:relative;color:#0056a6;font-size:12px;font-weight:normal;}
 .payment_agree li .btn_arrow:after {content:"";display:inline-block;width:6px;height:6px;margin-top:-1px;margin-left:4px;vertical-align:middle;border-top:1px solid #0056a6;border-right:1px solid #0056a6;transform:rotate(47deg);}
+.payment_gift > li {background-color:#fff;border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+.payment_gift > li + li {margin-top:12px;}
+.payment_gift > li.nodata {padding:20px;background:transparent;text-align:center;box-shadow:none;}
+.payment_gift label {display:block;padding:17px 20px;}
+.payment_gift label .tit {display:block;color:#000;font-size:16px;font-weight:normal;}
+.payment_gift label .sub {margin-top:5px;color:#565656;font-size:14px;}
+.payment_gift label .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
+.payment_gift label .date {margin-top:5px;color:#898989;font-size:13px;}

@@ -33,100 +33,101 @@
 		<!-- E : header -->
 
 		<!-- S : content -->
-		<div class="content ticket_historydetail"><!-- content에 해당 페이지 클래스를 추가로 줍니다. -->
+		<div class="content ticket_giftdetail"><!-- content에 해당 페이지 클래스를 추가로 줍니다. -->
+				
+			<form>
+				<fieldset>
+					<legend>선물하기 정보입력</legend>
 
-			<div class="payment">
-				<!-- S : 받는 분 정보 -->
-				<h3 class="h3_tit">받는 분 정보</h3>
-				<div class="payment_summary">
-					<dl>
-						<dt>이름</dt>
-						<dd><strong>홍길동</strong></dd>
-					</dl>
-					<dl>
-						<dt>휴대폰번호</dt>
-						<dd><strong>010-1234-5678</strong></dd>
-					</dl>
-				</div>
-				<!-- E : 받는 분 정보 -->
+					<div class="payment">
 
-				<!-- S : 내 티켓 -->
-				<h3 class="h3_tit">내 티켓</h3>
+						<ul class="form_wrap">
+							<!-- 증명사진 업로드 전// -->
+							<li>
+								<div class="form_box">
+									<div class="inputbtn">
+										<input type="text" placeholder="선물을 받을 분의 휴대폰번호(-제외)">
+										<button type="button" class="btn">검색</button>
+									</div>
+								</div>
+							</li>
+						</ul>
 
-				<ul class="ticket_list_reserve">
-					<!-- nodata 경우//
-					<li class="nodata">
-						내역이 없습니다.
-					</li>
-					-->
-					<li>
-						<div class="info">
-							<strong class="tit">2023 메디힐 한국일보 챔피언십</strong>
-							<div class="sub">
-								<span class="day">1일권</span>
-								<span class="sort">티켓테스트(전일권)</span>
-							</div>
-							<p class="date">2023.06.01 (일)</p>
+						<!-- S : 받는 분 정보 -->
+						<h3 class="h3_tit">받는 분 정보</h3>
+						<div class="payment_summary">
+							<dl>
+								<dt>이름</dt>
+								<dd><strong>홍길동</strong></dd>
+							</dl>
+							<dl>
+								<dt>휴대폰번호</dt>
+								<dd><strong>010-1234-5678</strong></dd>
+							</dl>
 						</div>
-						<p class="desc">대회소개 텍스트입니다.  대회소개 텍스트입니다. 대회소개 텍스트입니다.  대회소개 텍스트입니다. 대회소개</p>
-						<a href="javascript:;" class="btn blue">예매하기</a>
-					</li>
-	
-					<li>
-						<div class="info">
-							<strong class="tit">2023 메디힐 한국일보 챔피언십</strong>
-							<div class="sub">
-								<span class="day">1일권</span>
-								<span class="sort">티켓테스트(전일권)</span>
-							</div>
-							<p class="date">2023.06.01 (일)</p>
-						</div>
-						<p class="desc">대회소개 텍스트입니다.  대회소개 텍스트입니다. 대회소개 텍스트입니다.  대회소개 텍스트입니다. 대회소개</p>
-						<a href="javascript:;" class="btn blue">예매하기</a>
-					</li>
-	
-					<li>
-						<div class="info">
-							<strong class="tit">2023 메디힐 한국일보 챔피언십</strong>
-							<div class="sub">
-								<span class="day">1일권</span>
-								<span class="sort">티켓테스트(전일권)</span>
-							</div>
-							<p class="date">2023.06.01 (일)</p>
-						</div>
-						<p class="desc">대회소개 텍스트입니다.  대회소개 텍스트입니다. 대회소개 텍스트입니다.  대회소개 텍스트입니다. 대회소개</p>
-						<a href="javascript:;" class="btn blue">예매하기</a>
-					</li>
-				</ul>
-				<!-- E : 내 티켓 -->
+						<!-- E : 받는 분 정보 -->
 
-				<div class="btn_group">
-					<a href="javascript:;" class="btn big blue">선물하기</a>
-				</div>
-			</div>
+						<!-- S : 내 티켓 -->
+						<h3 class="h3_tit no_bd">내 티켓</h3>
+
+						<ul class="payment_gift">
+							<!-- nodata 경우//
+							<li class="nodata">
+								내역이 없습니다.
+							</li>
+							-->
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>
+										<strong class="tit">2023 메디힐 한국일보 챔피언십</strong>
+										<p class="sub">
+											<span class="day">1일권</span>
+											<span class="sort">티켓테스트(전일권)</span>
+										</p>
+										<p class="date">2023.06.01 (일)</p>
+									</span>
+								</label>
+							</li>
+			
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>
+										<strong class="tit">2023 메디힐 한국일보 챔피언십</strong>
+										<p class="sub">
+											<span class="day">1일권</span>
+											<span class="sort">티켓테스트(전일권)</span>
+										</p>
+										<p class="date">2023.06.01 (일)</p>
+									</span>
+								</label>
+							</li>
+			
+							<li>
+								<label>
+									<input type="checkbox" name="">
+									<span>
+										<strong class="tit">2023 메디힐 한국일보 챔피언십</strong>
+										<p class="sub">
+											<span class="day">1일권</span>
+											<span class="sort">티켓테스트(전일권)</span>
+										</p>
+										<p class="date">2023.06.01 (일)</p>
+									</span>
+								</label>
+							</li>
+						</ul>
+						<!-- E : 내 티켓 -->
+
+						<div class="bottom_area">
+							<a href="javascript:;" class="btn big blue">선물하기</a>
+						</div>
+					</div>
+				</fieldset>
+			</form>
 		</div>
 		<!-- E : content -->
-
-		<!-- S : footer -->
-		<footer class="footer">
-			<div class="footer_inner">
-				<span class="footer_logo"><img src="../img/footer_logo.svg" alt="THE MON SPORTS"></span>
-
-				<div class="footer_cont">
-					<ul class="footer_info">
-						<li>법인명(단체명) : 주식회사 더몬스포츠</li>
-						<li>대표자 : 윤기영</li>
-						<li>이메일 : themonsports@themonsports.co.kr</li>
-						<li>사업자등록증 번호 : 123-87-01225</li>
-						<li>연락처 : 070-7733-0804</li>
-						<li>통신판매업 신고 번호 : 2019-서울강서-1535호</li>
-						<li>주소: 서울특별시 강서구 양천로30길 123-5, 3층 302호(마곡동)</li>
-
-					<p class="footer_copyright">Copyright © 2023 themonsports. All rights reserved.</p>
-				</div>
-			</div>
-		</footer>
-		<!-- E : footer -->
 	</div>
 </body>
 </html>
