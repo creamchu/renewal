@@ -25,7 +25,7 @@
 /* 티켓 > 공통 */
 .ticket {padding:0;}
 
-/* 티켓 > 예매하기&예매내역 */
+/* 티켓 > 예매하기, 예매내역 */
 .ticket_list {border-top:8px solid #f2f2f2;}
 .ticket_list > li {border-bottom:1px solid #e3e3e3;}
 .ticket_list > li > a {display:block;position:relative;padding:20px 16px;}
@@ -34,7 +34,7 @@
 .ticket_list .state {color:#565656;font-size:13px;}
 .ticket_list .state.blue {color:#0056a6;}
 .ticket_list .state.red {color:#e54e2b;}
-.ticket_list .tit {display:block;margin-top:9px;color:#000;font-size:16px;font-weight:500;}
+.ticket_list .tit {display:block;margin-top:9px;color:#000;font-size:16px;font-weight:normal;}
 .ticket_list .sub {margin-top:10px;color:#565656;font-size:14px;}
 .ticket_list .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
 .ticket_list .date {margin-top:12px;color:#898989;font-size:13px;}
@@ -46,7 +46,7 @@
 .ticket_list_reserve > li + li {margin-top:12px;}
 .ticket_list_reserve > li.nodata {padding:20px;background:transparent;text-align:center;box-shadow:none;}
 .ticket_list_reserve .info {position:relative;padding-bottom:12px;border-bottom:1px dashed #edeff1;}
-.ticket_list_reserve .info .tit {display:block;color:#000;font-size:16px;font-weight:500;}
+.ticket_list_reserve .info .tit {display:block;color:#000;font-size:16px;font-weight:normal;}
 .ticket_list_reserve .info .sub {margin-top:11px;color:#565656;font-size:14px;}
 .ticket_list_reserve .info .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
 .ticket_list_reserve .info .date {margin-top:13px;color:#898989;font-size:13px;}
@@ -54,33 +54,19 @@
 .ticket_list_reserve .btn {display:block;margin-top:17px;}
 
 /* 티켓 > 예매하기 상세 */
-.ticket_reservedetail {padding:0;background:#f2f2f2;}
-.ticket_pro {margin:20px 20px 30px;padding:20px;background-color:#fff;border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
-.ticket_pro .info {position:relative;padding-bottom:12px;border-bottom:1px dashed #edeff1;}
-.ticket_pro .info .tit {display:block;color:#000;font-size:16px;font-weight:500;}
-.ticket_pro .info .sub {margin-top:11px;color:#565656;font-size:14px;}
-.ticket_pro .info .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
-.ticket_pro .info .date {margin-top:13px;color:#898989;font-size:13px;}
-.ticket_pro .info .ea_option {position:absolute;bottom:12px;right:0;}
-.ticket_pro .desc {margin-top:14px;color:#565656;font-size:12px;line-height:18px;}
+.ticket_reservedetail {padding:0;}
+.ticket_prd {padding:20px 20px 30px;background:#f2f2f2;}
+.ticket_prd .box {padding:20px;background-color:#fff;border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+.ticket_prd .info {position:relative;padding-bottom:12px;border-bottom:1px dashed #edeff1;}
+.ticket_prd .info .tit {display:block;color:#000;font-size:16px;font-weight:normal;}
+.ticket_prd .info .sub {margin-top:11px;color:#565656;font-size:14px;}
+.ticket_prd .info .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
+.ticket_prd .info .date {margin-top:13px;color:#898989;font-size:13px;}
+.ticket_prd .info .ea_option {position:absolute;bottom:12px;right:0;}
+.ticket_prd .desc {margin-top:14px;color:#565656;font-size:12px;line-height:18px;}
 
-/* payment */
-.payment {padding:30px 16px 50px;background:#fff;}
-.payment .h3_tit {margin-bottom:0;padding-bottom:13px;font-size:16px;line-height:normal;border-bottom:1px solid #e3e3e3;}
-.payment .btn_group {margin-top:40px;}
-.payment .btn_group .btn:last-child {width:80%;}
-.payment_summary dl {display:flex;justify-content:space-between;padding:15px 0;border-bottom:1px solid #e3e3e3;}
-.payment_summary dt {line-height:1.19;color:#565656;font-size:13px;font-weight:500;}
-.payment_summary dd {line-height:1.28;color:#000;font-size:14px;text-align:right;}
-.payment_summary dd strong {font-weight:500;}
-.payment_summary dd.payment_total {line-height:0.96;color:#ef2823;font-size:18px;}
-.payment_refund {margin-top:18px;}
-.payment_refund li {line-height:1.5;color:#565656;font-size:13px;}
-.payment_agree {margin-top:18px;}
-.payment_agree li {margin-top:12px;line-height:20px;}
-.payment_agree li:after {content:"";display:block;clear:both;}
-.payment_agree li .btn_arrow {float:right;position:relative;line-height:1.71;color:#005ab2;font-size:14px;font-weight:500;}
-.payment_agree li .btn_arrow:after {content:"";display:inline-block;width:6px;height:6px;margin-top:-1px;margin-left:4px;vertical-align:middle;border-top:1px solid #005ab2;border-right:1px solid #005ab2;transform:rotate(47deg);}
+/* 티켓 > 예매내역 상세 */
+.ticket_historydetail {padding:10px 0 0;}
 
 /* 티켓 > 선물함 */
 .ticket_gift {padding:0;background:#f2f2f2;}
@@ -89,9 +75,9 @@
 .ticket_list_gift > li.nodata {padding:20px;background:transparent;text-align:center;box-shadow:none;}
 .ticket_list_gift .notify {display:block;margin-bottom:15px;padding-bottom:16px;color:#000;font-size:16px;line-height:20px;border-bottom:1px dashed #edeff1;}
 .ticket_list_gift .info {position:relative;}
-.ticket_list_gift .info .state {position:absolute;bottom:0;right:0;color:#565656;font-size:13px;}
+.ticket_list_gift .info .state {position:absolute;bottom:0;right:0;color:#565656;font-size:13px;font-weight:500;}
 .ticket_list_gift .info .state.red {color:#e54e2b;}
-.ticket_list_gift .info .tit {display:block;color:#000;font-size:16px;font-weight:500;}
+.ticket_list_gift .info .tit {display:block;color:#000;font-size:16px;font-weight:normal;}
 .ticket_list_gift .info .sub {margin-top:11px;color:#565656;font-size:14px;}
 .ticket_list_gift .info .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
 .ticket_list_gift .info .date {margin-top:13px;color:#898989;font-size:13px;}
