@@ -23,7 +23,7 @@
 .btn:disabled {background:#e4e4e4 !important;color:#fff;border-color:#e4e4e4 !important;pointer-events:none;}
 .btn.full {width:100%;}
 .btn.small {min-width:auto;height:22px;padding:0 8px;font-size:12px;line-height:22px;}
-.btn.big {min-width:152px;height:48px;font-size:16px;line-height:46px;}
+.btn.big {min-width:152px;height:48px;font-size:16px;line-height:48px;}
 .btn.big.round {border-radius:22px;}
 .btn.white {background:#fff;}
 .btn.black {background:rgba(0,0,0, .4);color:#fff;}
@@ -176,7 +176,7 @@ select::-ms-expand {display:none;}
 .lnb .lnb_menu > li {position:relative;width:33.333%;}
 .lnb .lnb_menu > li:before {content:"";position:absolute;top:50%;left:0;width:1px;height:12px;margin-top:-6px;background:#f2f2f2;}
 .lnb .lnb_menu > li:first-child:before {display:none;}
-.lnb .lnb_menu > li > a {display:block;position:relative;height:50px;color:#898989;font-size:14px;line-height:48px;}
+.lnb .lnb_menu > li > a {display:block;position:relative;height:50px;color:#898989;font-size:14px;line-height:52px;}
 .lnb .lnb_menu > li > a:before {content:"";position:absolute;top:4px;left:-16px;width:1px;height:18px;background:#B3B3B3;}
 .lnb .lnb_menu > li > a:first-child:before {display:none;}
 .lnb .lnb_menu > li.is_active > a {color:#0056a6;border-bottom:3px solid #0056a6;}
@@ -185,7 +185,7 @@ select::-ms-expand {display:none;}
 .tab {margin-top:16px;}
 .tab .tab_menu {display:flex;align-items:center;padding:0 16px;}
 .tab .tab_menu > li {width:50%;}
-.tab .tab_menu > li > a {display:block;height:40px;background:#fff;color:#898989;font-size:13px;line-height:40px;text-align:center;border:solid 1px #e3e3e3;}
+.tab .tab_menu > li > a {display:block;height:40px;background:#fff;color:#898989;font-size:13px;line-height:42px;text-align:center;border:solid 1px #e3e3e3;}
 .tab .tab_menu > li:first-child > a {border-right:none;border-top-left-radius:4px;border-bottom-left-radius:4px;}
 .tab .tab_menu > li:last-child > a {border-left:none;border-top-right-radius:4px;border-bottom-right-radius:4px;}
 .tab .tab_menu > li.is_active > a {background:#0056a6;color:#fff;border:none;}
@@ -234,7 +234,7 @@ select::-ms-expand {display:none;}
 .payment .btn_group {margin-top:40px;}
 .payment .btn_group .btn:first-child {width:30%;}
 .payment .btn_group .btn:last-child {width:70%;}
-.payment_summary dl {display:flex;align-items:center;justify-content:space-between;padding:18px 0 17px;border-bottom:1px solid #e3e3e3;}
+.payment_summary dl {display:flex;align-items:center;justify-content:space-between;padding:19px 0 16px;border-bottom:1px solid #e3e3e3;}
 .payment_summary dt {color:#565656;font-size:13px;font-weight:normal;}
 .payment_summary dd {color:#000;font-size:14px;}
 .payment_summary dd strong {font-weight:normal;}

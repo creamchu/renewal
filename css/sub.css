@@ -70,9 +70,7 @@
 
 /* 티켓 > 선물함 */
 .ticket_gift {padding:0;background:#f2f2f2;}
-.ticket_list_gift > li {padding:20px;background-color:#fff; padding: 20px 91px 20px 20px;
-  border-radius: 12px;
-  box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
+.ticket_list_gift > li {padding:20px;background-color:#fff;border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
 .ticket_list_gift > li + li {margin-top:12px;}
 .ticket_list_gift > li.nodata {padding:20px;background:transparent;text-align:center;box-shadow:none;}
 .ticket_list_gift .notify {display:block;margin-bottom:15px;padding-bottom:16px;color:#000;font-size:16px;line-height:20px;border-bottom:1px dashed #edeff1;}
