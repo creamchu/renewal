@@ -8,7 +8,7 @@
 */
 
 /* 회원가입 > 공통 */
-.join {padding:20px 16px;}
+.join.content {padding:20px 16px;}
 .join .h3_tit {margin-top:20px;}
 .join .category_list {margin:0 -16px;border-top:1px solid #e3e3e3;}
 .join_titlebox {margin-bottom:30px;}
@@ -23,7 +23,7 @@
 .join_agree .box .txt {margin-top:13px;}
 
 /* 티켓 > 공통 */
-.ticket {padding:0;}
+.ticket.content {padding:0;}
 
 /* 티켓 > 예매하기, 예매내역 */
 .ticket_list {border-top:8px solid #f2f2f2;}
@@ -40,7 +40,7 @@
 .ticket_list .date {margin-top:12px;color:#898989;font-size:13px;}
 
 /* 티켓 > 예매하기 리스트 */
-.ticket_reserve {padding:0;background:#f2f2f2;}
+.ticket_reserve.content {padding:0;background:#f2f2f2;}
 .ticket_list_reserve {padding:20px 16px;}
 .ticket_list_reserve > li {padding:20px;background-color:#fff;border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
 .ticket_list_reserve > li + li {margin-top:12px;}
@@ -54,7 +54,7 @@
 .ticket_list_reserve .btn {display:block;margin-top:17px;}
 
 /* 티켓 > 예매하기 상세 */
-.ticket_reservedetail {padding:0;}
+.ticket_reservedetail.content {padding:0;}
 .ticket_prd {padding:20px 20px 30px;background:#f2f2f2;}
 .ticket_prd .box {padding:20px;background-color:#fff;border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
 .ticket_prd .info {position:relative;padding-bottom:12px;border-bottom:1px dashed #edeff1;}
@@ -66,10 +66,10 @@
 .ticket_prd .desc {margin-top:14px;color:#565656;font-size:12px;line-height:18px;}
 
 /* 티켓 > 예매내역 상세 */
-.ticket_historydetail {padding:10px 0 0;}
+.ticket_historydetail.content {padding:10px 0 0;}
 
 /* 티켓 > 선물함 */
-.ticket_gift {padding:0;background:#f2f2f2;}
+.ticket_gift.content {padding:0;background:#f2f2f2;}
 .ticket_list_gift > li {padding:20px;background-color:#fff;border-radius:12px;box-shadow:0 3px 6px 0 rgba(0, 0, 0, 0.16);}
 .ticket_list_gift > li + li {margin-top:12px;}
 .ticket_list_gift > li.nodata {padding:20px;background:transparent;text-align:center;box-shadow:none;}
@@ -85,3 +85,25 @@
 /* 티켓 > 선물함 상세 */
 .ticket_giftdetail .form_wrap {margin-bottom:40px;}
 .ticket_giftdetail .payment {padding:0;}
+
+/* 배차 신청 */
+.carapply.content {padding-top:40px;}
+
+/* 배차 현황 > 신청자 */
+.carapplyresult.content {padding-top:40px;}
+
+/* 배차 현황 > 드라이버 */
+.cardriverresult.content {padding-top:40px;}
+.cardriverresult .bottom_area {display:flex;align-items:center;gap:8px;margin-top:40px;}
+.cardriverresult .bottom_area .btn:first-child {width:30%;min-width:auto;}
+.cardriverresult .bottom_area .btn:last-child {width:70%;}
+
+/* E-FORM */
+.eform.content {padding-top:40px;}
+.eform .h3_tit {margin-bottom:5px;font-size:20px;font-weight:600;}
+.eform .tit_desc {color:#898989;font-size:13px;line-height:20px;}
+.eform .form_wrap {margin-top:30px;}
+
+/* 리서치 */
+.research .tit_desc {color:#000;font-size:13px;line-height:20px;}
+.research .form_wrap {margin-top:25px;}
