@@ -25,6 +25,9 @@ var fn = (function() {
 
 			//bottomarea
 			fn.bottomarea();
+
+			//footergnb
+			fn.footergnb();
 		},
 
 		//select
@@ -103,6 +106,13 @@ var fn = (function() {
 				$menu.addClass("is_active").siblings().removeClass("is_active");
 				$(".tab .tab_cont .tab_item").eq(i).addClass("is_active").siblings().removeClass("is_active");
 			});
+		},
+
+		//footergnb
+		footergnb : function(){
+			if($(".footer_gnb").length > 0) {
+				$(".content").addClass("is_footer_gnb");
+			}
 		},
 
 		//bottomarea

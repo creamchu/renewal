@@ -139,6 +139,7 @@ select::-ms-expand {display:none;}
 .header .btn_sos {position:absolute;top:50%;right:8px;width:42px;height:42px;margin-top:-21px;background:url('../img/header_sos.png') no-repeat 50% 50%/42px;}
 .content {min-height:calc(100% - 70px);margin-top:70px;padding:20px 16px;}
 .content.is_bottom_area {padding-bottom:108px !important;}
+.content.is_footer_gnb {padding-bottom:108px !important;}
 .bottom_area {position:fixed;bottom:0;left:0;width:100%;/*background:#fff;*/padding:20px 16px;}
 .bottom_area .btn:first-child:last-child {width:100%;}
 .footer {position:relative;padding:30px 16px;background-color:#f7f7f7;}
@@ -146,7 +147,22 @@ select::-ms-expand {display:none;}
 .footer .footer_cont {margin-top:20px;}
 .footer .footer_cont .footer_info li {display:block;position:relative;color:#565656;font-size:12px;line-height:20px;}
 .footer .footer_cont .footer_copyright {margin-top:12px;color:#898989;font-size:11px;line-height:19px;}
-.footer_gnb {position:fixed;bottom:0;left:0;width:100%;}
+.footer_gnb {position:fixed;bottom:0;left:0;width:100%;background:#fff;border-top:1px solid #a7a7a7;}
+.footer_gnb ul {display:flex;align-items:center;}
+.footer_gnb ul li {width:20%;text-align:center;}
+.footer_gnb ul li a {display:block;padding:15px 0 16px;color:#565656;font-size:11px;font-weight:600;}
+.footer_gnb .ico::before {content:"";display:block;width:32px;height:32px;margin:0 auto 4px;background-repeat:no-repeat;background-position:50% 50%;background-size:28px;}
+.footer_gnb .ico.home::before {background-image:url('../img/ico_gnb_home.png');}
+.footer_gnb .ico.my::before {background-image:url('../img/ico_gnb_my.png');}
+.footer_gnb .ico.talk::before {background-image:url('../img/ico_gnb_talk.png');background-size:32px;}
+.footer_gnb .ico.notice::before {background-image:url('../img/ico_gnb_notice.png');}
+.footer_gnb .ico.storage::before {background-image:url('../img/ico_gnb_storage.png');}
+.footer_gnb ul li.is_active a {color:#000;}
+.footer_gnb ul li.is_active .ico.home::before {background-image:url('../img/ico_gnb_home_on.png');}
+.footer_gnb ul li.is_active .ico.my::before {background-image:url('../img/ico_gnb_my_on.png');}
+.footer_gnb ul li.is_active .ico.talk::before {background-image:url('../img/ico_gnb_talk_on.png');}
+.footer_gnb ul li.is_active .ico.notice::before {background-image:url('../img/ico_gnb_notice_on.png');}
+.footer_gnb ul li.is_active .ico.storage::before {background-image:url('../img/ico_gnb_storage_on.png');}
 
 /**
 * --------------------------------
