@@ -141,12 +141,12 @@ select::-ms-expand {display:none;}
 .content.is_bottom_area {padding-bottom:108px !important;}
 .bottom_area {position:fixed;bottom:0;left:0;width:100%;/*background:#fff;*/padding:20px 16px;}
 .bottom_area .btn:first-child:last-child {width:100%;}
-
 .footer {position:relative;padding:30px 16px;background-color:#f7f7f7;}
 .footer .footer_logo {display:block;}
 .footer .footer_cont {margin-top:20px;}
 .footer .footer_cont .footer_info li {display:block;position:relative;color:#565656;font-size:12px;line-height:20px;}
 .footer .footer_cont .footer_copyright {margin-top:12px;color:#898989;font-size:11px;line-height:19px;}
+.footer_gnb {position:fixed;bottom:0;left:0;width:100%;}
 
 /**
 * --------------------------------
@@ -273,3 +273,9 @@ select::-ms-expand {display:none;}
 .payment_gift label .sub {margin-top:5px;color:#565656;font-size:14px;}
 .payment_gift label .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
 .payment_gift label .date {margin-top:5px;color:#898989;font-size:13px;}
+
+/* qr */
+.qr_wrap {margin-top:24px;text-align:center;}
+.qr_wrap .qr {display:inline-block;border:6px solid #0056a6;}
+.qr_wrap .qr img {max-width:128px;}
+.qr_wrap .qr_code {margin-top:8px;color:#565656;font-size:20px;}
