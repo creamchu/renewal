@@ -107,3 +107,6 @@
 /* 리서치 */
 .research .tit_desc {color:#000;font-size:13px;line-height:20px;}
 .research .form_wrap {margin-top:25px;}
+
+/* MY(QR) 회원정보 */
+.mymemberinfo.content {padding-top:40px;}
