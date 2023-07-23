@@ -294,4 +294,4 @@ select::-ms-expand {display:none;}
 .qr_wrap {margin-top:24px;text-align:center;}
 .qr_wrap .qr {display:inline-block;border:6px solid #0056a6;}
 .qr_wrap .qr img {max-width:128px;}
-.qr_wrap .qr_code {margin-top:8px;color:#565656;font-size:20px;}
+.qr_wrap .qr_code {margin-top:10px;color:#565656;font-size:20px;}
