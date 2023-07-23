@@ -133,9 +133,10 @@ select::-ms-expand {display:none;}
 .header {position:fixed;top:0;width:100%;height:70px;background:#fff;border-bottom:1px solid #efefef;z-index:10;}
 .header .header_tit {display:flex;align-items:center;justify-content:center;height:70px;}
 .header .tit {color:#000;font-size:18px;font-weight:600;line-height:28px;}
+.header .btn_menu {position:absolute;top:0;left:0;width:56px;height:70px;background:url('../img/header_menu.svg') no-repeat 50% 50%/30px;}
 .header .btn_prev {position:absolute;top:0;left:0;width:56px;height:70px;background:url('../img/header_prev.png') no-repeat 50% 50%/24px;}
 .header .btn_qna {position:absolute;top:50%;right:8px;margin-top:-13px;padding:5px;color:#1b45b3;font-size:16px;font-weight:600;}
-.header .btn_sos {position:absolute;top:50%;right:8px;width:42px;height:42px;margin-top:-21px;background:url('../img/ico_sos.png') no-repeat 50% 50%/42px;}
+.header .btn_sos {position:absolute;top:50%;right:8px;width:42px;height:42px;margin-top:-21px;background:url('../img/header_sos.png') no-repeat 50% 50%/42px;}
 .content {min-height:calc(100% - 70px);margin-top:70px;padding:20px 16px;}
 .content.is_bottom_area {padding-bottom:108px !important;}
 .bottom_area {position:fixed;bottom:0;left:0;width:100%;/*background:#fff;*/padding:20px 16px;}
@@ -221,8 +222,8 @@ select::-ms-expand {display:none;}
 
 /* summary_list */
 .summary_list dl {display:flex;flex-wrap:wrap;border-top:1px solid #e3e3e3;}
-.summary_list dt {width:30%;padding:20px 0 15px;color:#565656;font-size:13px;border-bottom:1px solid #e3e3e3;}
-.summary_list dd {width:70%;padding:17px 0 11px;color:#000;font-size:14px;line-height:20px;border-bottom:1px solid #e3e3e3;}
+.summary_list dt {width:30%;padding:20px 0 16px;color:#565656;font-size:13px;border-bottom:1px solid #e3e3e3;}
+.summary_list dd {width:70%;padding:17px 0 12px;color:#000;font-size:14px;line-height:20px;border-bottom:1px solid #e3e3e3;}
 .summary_list .picture {display:flex;align-items:end;gap:8px;margin-top:5px;}
 .summary_list .picture .images {border-radius:4px;overflow:hidden;}
 .summary_list .picture .images img {max-width:72px;}
