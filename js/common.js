@@ -113,6 +113,13 @@ var fn = (function() {
 			if($(".footer_gnb").length > 0) {
 				$(".content").addClass("is_footer_gnb");
 			}
+
+			$(document).on("click", ".footer_gnb li > a", function() {
+				var $menu = $(this).closest("li"),
+					i = $menu.index();
+
+				$menu.addClass("is_active").siblings().removeClass("is_active");
+			});
 		},
 
 		//bottomarea
