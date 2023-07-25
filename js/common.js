@@ -23,6 +23,9 @@ var fn = (function() {
 			//tab
 			fn.tab();
 
+			//toggle
+			fn.toggle();
+
 			//bottomarea
 			fn.bottomarea();
 
@@ -64,7 +67,7 @@ var fn = (function() {
 				if ( eaVal < max ){
 					eaVal++;
 				}
-			}else{
+			} else {
 				eaVal++;
 			}
 				$obj.siblings("input").val(eaVal);
@@ -86,7 +89,7 @@ var fn = (function() {
 				if ( eaVal > min ){
 					eaVal--;
 				}
-			}else{
+			} else {
 				if ( eaVal > 1 ){
 					eaVal--;
 				}
@@ -100,11 +103,25 @@ var fn = (function() {
 		//tab
 		tab : function(){
 			$(document).on("click", ".tab .tab_menu a", function() {
-				var $menu = $(this).closest("li"),
-					i = $menu.index();
+				var $item = $(this).closest("li"),
+					i = $item.index();
 
-				$menu.addClass("is_active").siblings().removeClass("is_active");
+				$item.addClass("is_active").siblings().removeClass("is_active");
 				$(".tab .tab_cont .tab_item").eq(i).addClass("is_active").siblings().removeClass("is_active");
+			});
+		},
+
+		//toggle
+		toggle : function(){
+			$(document).on("click", ".toggle .toggle_btn", function() {
+				var $item = $(this).closest("li"),
+					i = $item.index();
+
+				if($item.hasClass("is_active")) {
+					$item.removeClass("is_active");
+				} else {
+					$item.addClass("is_active").siblings().removeClass("is_active");
+				}
 			});
 		},
 

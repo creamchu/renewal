@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24">
+    <defs>
+        <clipPath id="5r2adahzca">
+            <path data-name="사각형 1" transform="translate(.001)" style="fill:#fff;stroke:#707070" d="M0 0h24v24H0z"/>
+        </clipPath>
+    </defs>
+    <g data-name="X" transform="translate(-.001)" style="clip-path:url(#5r2adahzca)">
+        <path data-name="선 698" transform="translate(3.001 3)" style="fill:none;stroke:#333;stroke-linecap:round;stroke-width:2px" d="M18 0 0 18"/>
+        <path data-name="선 699" transform="translate(3.001 3)" style="fill:none;stroke:#333;stroke-linecap:round;stroke-width:2px" d="m0 0 18 18"/>
+    </g>
+</svg>

@@ -28,7 +28,7 @@
 /* 티켓 > 예매하기, 예매내역 */
 .ticket_list {border-top:8px solid #f2f2f2;}
 .ticket_list > li {border-bottom:1px solid #e3e3e3;}
-.ticket_list > li > a {display:block;position:relative;padding:20px 16px;}
+.ticket_list > li > a {display:block;position:relative;padding:20px 45px 20px 16px;}
 .ticket_list > li > a:after {content:"";position:absolute;top:50%;right:16px;width:20px;height:20px;margin-top:-10px;background:url('../img/ico_arrow_blue.svg') no-repeat 0 0;}
 .ticket_list > li.nodata {padding:40px;text-align:center;border:none;}
 .ticket_list .state {color:#565656;font-size:13px;}
@@ -116,3 +116,49 @@
 
 /* MY(QR) 회원정보 */
 .mymemberinfo.content {padding-top:40px;}
+
+/* 공지사항 */
+.notice.content {padding:0;}
+
+/* qna */
+.qna.content {padding:0;}
+.qna .lnb .lnb_menu > li {width:50%;}
+.qna_list > li {border-bottom:1px solid #e3e3e3;}
+.qna_list > li > a {display:block;position:relative;padding:20px 45px 20px 16px;}
+.qna_list > li > a:after {content:"";position:absolute;top:50%;right:16px;width:20px;height:20px;margin-top:-10px;background:url('../img/ico_arrow_blue.svg') no-repeat 0 0;}
+.qna_list > li.nodata {padding:40px;text-align:center;border:none;}
+.qna_list .state {color:#565656;font-size:12px;}
+.qna_list .state.blue {color:#0056a6;}
+.qna_list .tit {display:block;margin-top:9px;color:#000;font-size:16px;line-height:20px;}
+.qna_list .date {margin-top:10px;color:#898989;font-size:13px;}
+.qna_detail > li {border-bottom:1px solid #e3e3e3;}
+.qna_detail .head {position:relative;padding:20px 16px 20px 52px;}
+.qna_detail .head:before {content:"Q";display:block;position:absolute;top:50%;left:16px;width:28px;height:28px;margin-top:-14px;background:#0056a6;color:#fff;font-size:13px;line-height:28px;text-align:center;border-radius:28px;}
+.qna_detail .head .tit {display:block;color:#000;font-size:16px;line-height:20px;}
+.qna_detail .head .date {margin-top:6px;color:#898989;font-size:13px;}
+.qna_detail .cont {position:relative;padding:20px 16px 20px 52px;background:#f2f2f2;}
+.qna_detail .cont .txt {display:block;color:#000;font-size:13px;line-height:20px;}
+.qna_detail .cont .txt:before {content:"A";display:block;position:absolute;top:20px;left:16px;width:28px;height:28px;background:#565656;color:#fff;font-size:13px;line-height:28px;text-align:center;border-radius:28px;}
+.qna_detail .cont .date {display:block;margin-top:15px;color:#898989;font-size:13px;}
+
+/* 차량 배차 내역 */
+.storagecar.content {padding:0;}
+.car_history_list > li {position:relative;padding:20px 16px;border-bottom:1px solid #e3e3e3;}
+.car_history_list > li.nodata {padding:40px;text-align:center;border:none;}
+.car_history_list .tit {display:block;margin-top:9px;color:#000;font-size:16px;line-height:20px;}
+.car_history_list .date {color:#898989;font-size:13px;}
+.car_history_list dl {display:flex;align-items:center;margin-top:10px;}
+.car_history_list dl + dl {margin-top:6px;}
+.car_history_list dl dt {padding:5px 6px 4px;font-size:11px;font-weight:600;border-radius:4px;}
+.car_history_list dl dt.from {color:#898989;background:#f4f4f4;}
+.car_history_list dl dt.to {color:#e54e2b;background:#fdede9;}
+.car_history_list dl dd {margin-left:8px;color:#000;font-size:16px;font-weight:600;}
+.car_history_list .state {position:absolute;top:50%;right:16px;margin-top:-8px;color:#898989;font-size:16px;font-weight:600;}
+.car_history_list .state.blue {color:#0056a6;}
+
+/* 이벤트 */
+.event.content {margin-top:0;padding-top:40px;}
+.event_titlebox {margin-bottom:30px;}
+.event_titlebox dl {display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px 12px;background-color:#f2f2f2;border-radius:4px;}
+.event_titlebox dt {color:#000;font-size:14px;font-weight:600;}
+.event_titlebox dd {color:#1b45b3;font-size:14px;font-weight:600;}
