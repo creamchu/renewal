@@ -48,13 +48,13 @@
 /* form */
 input, select, textarea {background:#fff;}
 textarea {width:100%;height:120px;padding:14px 12px;border:1px solid #e4e4e4;border-radius:6px;resize:none;overflow-y:auto;}
-textarea:disabled {color:#888;background:#f3f3f3;}
+textarea:disabled {color:#898989;background:#f2f2f2;}
 textarea::placeholder {color:#898989;}
 
 /* input text, input password, input number, input email, input search */
 input[type="text"], input[type="password"], input[type="number"], input[type="email"], input[type="search"] {width:100%;height:40px;padding:5px 12px 4px;line-height:40px;vertical-align:middle;border:1px solid #e4e4e4;border-radius:6px;}
 input[type="text"]::placeholder, input[type="password"]::placeholder, input[type="number"]::placeholder, input[type="email"]::placeholder, input[type="search"]::placeholder {color:#898989;opacity:1;}
-input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled, input[type="search"]:disabled {color:#888;background:#f3f3f3;}
+input[type="text"]:disabled, input[type="password"]:disabled, input[type="number"]:disabled, input[type="email"]:disabled, input[type="search"]:disabled {color:#898989;background:#f2f2f2;}
 input:focus::placeholder{color:transparent}
 
 /* input checkbox */
@@ -116,7 +116,7 @@ select::-ms-expand {display:none;}
 .ui-datepicker td.ui-datepicker-today .ui-state-default:after {position:absolute;bottom:-12px;left:-6px;display:block;width:30px;color:#aea7a2;font-size:13px;font-weight:200;}
 .ui-datepicker td.ui-datepicker-today .ui-state-default.ui-state-active {background:#326dc2;color:#fff;}
 .ui-datepicker .ui-datepicker-current {display:none;}
-.ui-datepicker td.ui-state-disabled .ui-state-default {background:#f3f3f3;color:#888;border-radius:0;}
+.ui-datepicker td.ui-state-disabled .ui-state-default {background:#f2f2f2;color:#898989;border-radius:0;}
 
 /**
 * --------------------------------
@@ -233,6 +233,7 @@ select::-ms-expand {display:none;}
 .form_wrap .form_box .form_txt {margin-top:7px;color:#898989;font-size:13px;line-height:20px;}
 .form_wrap .form_box .form_txt:first-child {margin-top:5px;}
 .form_wrap .form_box .form_item .item {margin-top:12px;}
+.form_wrap .form_box .form_chk {margin-top:24px;}
 
 /* summary_list */
 .summary_list dl {display:flex;flex-wrap:wrap;border-top:1px solid #e3e3e3;}
@@ -298,15 +299,18 @@ select::-ms-expand {display:none;}
 body.pop_open {overflow:hidden;}
 .popup {display:none;align-items:center;justify-content:center;position:fixed;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.7);z-index:100;}
 .popup.is_open {display:flex;}
-.popup .popup_inner {position:relative;width:980px;height:750px;max-height:90%; padding:70px 40px 60px;background:#fff;border-radius:20px;box-shadow:0 6px 12px 0 rgba(0, 0, 0, 0.16);}
-.popup .popup_cont {height:546px;padding:30px 20px;background-color:#fff;border:1px solid #e4e4e4;border-radius:5px;overflow-y:auto;}
+.popup .popup_inner {position:relative;width:calc(100% - 30px);height:calc(100% - 30px);padding:24px 14px 40px;background:#fff;border-radius:20px;box-shadow:0 6px 12px 0 rgba(0, 0, 0, 0.16);}
+.popup .popup_head {height:40px;}
+.popup .popup_head .popup_tit {color:#232323;font-size:16px;line-height:23px;text-align:center;}
+.popup .popup_cont {height:calc(100% - 40px);padding:12px;background-color:#fff;border:1px solid #e4e4e4;border-radius:5px;overflow-y:auto;}
 .popup .popup_cont::-webkit-scrollbar {width:6px; /* 스크롤바의 너비 */}
 .popup .popup_cont::-webkit-scrollbar-thumb {background:#c1c0c1;border-radius:3px; /* 스크롤바의 색상 */}
-.popup .popup_close {position:absolute;top:20px;right:30px;width:34px;height:34px;background:url('../img/btn_pop_close.svg') no-repeat 50% 50%;}
+.popup .popup_close {position:absolute;top:17px;right:10px;width:34px;height:34px;background:url('../img/btn_pop_close.svg') no-repeat 50% 50%;}
 .popup .btn_area .btn {width:100px;}
 
-.popup.small .popup_inner {width:450px;height:auto;padding:40px;}
-.popup.small .popup_cont {height:auto;padding:0;border:none;}
-.popup.small .pop_head {line-height:1.15;margin-bottom:2px;color:#232323;font-size:20px;text-align:center;}
-.popup.small .pop_desc {line-height:1.44;margin-bottom:20px;color:#565656;font-size:16px;text-align:center;}
-.popup.small .btn_area {margin-top:24px;}
+/* 팝업 - 약관 */
+.popup .agree_head {color:#898989;font-size:12px;font-weight:normal;line-height:23px;}
+.popup .agree_tit {margin-top:10px;color:#898989;font-size:12px;font-weight:normal;line-height:18px;}
+.popup .agree_desc {margin-top:4px;color:#898989;font-size:12px;line-height:18px;}
+.popup .agree_add {margin-top:20px;color:#898989;font-size:12px;line-height:18px;}
+

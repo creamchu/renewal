@@ -19,7 +19,7 @@
 /* 회원가입 > 약관동의 */
 .join_agree .box + .box {margin-top:30px;}
 .join_agree .box .tit {color:#232323;font-size:15px;}
-.join_agree .box .cont {height:160px;margin-top:8px;padding:16px;background-color:#fff;color:#898989;font-size:12px;line-height:1.5;border:solid 1px #e4e4e4;border-radius:5px;overflow-y:scroll;}
+.join_agree .box .cont {height:160px;margin-top:8px;padding:16px;background-color:#fff;color:#898989;font-size:12px;line-height:18px;border:solid 1px #e4e4e4;border-radius:5px;overflow-y:scroll;}
 .join_agree .box .txt {margin-top:13px;}
 
 /* 티켓 > 공통 */
@@ -75,7 +75,7 @@
 .ticket_list_gift > li.nodata {padding:20px;background:transparent;text-align:center;box-shadow:none;}
 .ticket_list_gift .notify {display:block;margin-bottom:15px;padding-bottom:16px;color:#000;font-size:16px;line-height:20px;border-bottom:1px dashed #edeff1;}
 .ticket_list_gift .info {position:relative;}
-.ticket_list_gift .info .state {position:absolute;bottom:0;right:0;color:#565656;font-size:13px;font-weight:500;}
+.ticket_list_gift .info .state {position:absolute;bottom:0;right:0;color:#565656;font-size:13px;font-weight:normal;}
 .ticket_list_gift .info .state.red {color:#e54e2b;}
 .ticket_list_gift .info .tit {display:block;color:#000;font-size:16px;font-weight:normal;}
 .ticket_list_gift .info .sub {margin-top:11px;color:#565656;font-size:14px;}
@@ -159,6 +159,6 @@
 /* 이벤트 */
 .event.content {margin-top:0;padding-top:40px;}
 .event_titlebox {margin-bottom:30px;}
-.event_titlebox dl {display:flex;align-items:center;justify-content:center;gap:8px;padding:14px 10px 12px;background-color:#f2f2f2;border-radius:4px;}
-.event_titlebox dt {color:#000;font-size:14px;font-weight:600;}
-.event_titlebox dd {color:#1b45b3;font-size:14px;font-weight:600;}
+.event_titlebox dl {padding:21px 10px 19px;background-color:#f2f2f2;text-align:center;border-radius:4px;}
+.event_titlebox dt {color:#1b45b3;font-size:14px;font-weight:normal;}
+.event_titlebox dd {margin-top:10px;color:#000;font-size:20px;font-weight:600;}
