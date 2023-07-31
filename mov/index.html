@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Document</title>
+    </head>
+    <body>
+        <video class="video" onended="endVideo()">
+            <source src="smoke.webm" type="video/webm" />
+            <source src="smoke.mov" type="video/mov" />
+        </video>
+        <button class="btn-video">애도를 표합니당..</button>
+        <style>
+            .video.end-video {
+                display: none;
+            }
+        </style>
+        <script>
+            const btn = document.querySelector(".btn-video");
+            const video = document.querySelector(".video");
+
+            btn.addEventListener("click", playVideo);
+            // btn.addEventListener("ended", endVideo);
+
+            function playVideo() {
+                video.play();
+                video.classList.remove("end-video");
+            }
+            function endVideo() {
+                video.classList.add("end-video");
+            }
+        </script>
+    </body>
+</html>
