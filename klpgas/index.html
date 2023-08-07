@@ -1,0 +1,302 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+  <meta charset="UTF-8">
+    <title>대보hausD오픈 INDEX</title>
+    <style>
+      body{margin:0;padding:0;font-family:Malgun Gothic, "맑은 고딕", Dotum, "돋움", sans-serif;}
+      .guideindex{margin-bottom:100px;padding:20px 10px 40px;background:#fff;color:#000;}
+      .guideindex .guideh1{margin:0;color:#161f74;font-size:26px;font-weight:bold;text-align:center;}
+      .guideindex .guideh2{margin:30px 0 10px;font-size:16px;font-weight:bold;}
+      .guideindex .guide_tbl {width:100%;margin:0;text-align:center;border-top:2px #161f74 solid;border-collapse:collapse;border-right:1px #dedede solid;}
+      .guideindex .guide_tbl tr > th,
+      .guideindex .guide_tbl tr > td {padding:10px 8px;border-left:1px #dedede solid;border-top:1px #dedede solid;vertical-align:top;}
+      .guideindex .guide_tbl thead tr:first-child > th,
+      .guideindex .guide_tbl tbody tr:first-child > th,
+      .guideindex .guide_tbl tbody tr:first-child > td {border-top:none;}
+      .guideindex .guide_tbl thead tr > th {background:#eee;font-size:13px;vertical-align:middle;}
+      .guideindex .guide_tbl tbody tr > td {vertical-align:top;}
+      .guideindex .guide_tbl thead tr > th {color:#000;font-weight:bold;}
+      .guideindex .guide_tbl tbody {font-size:13px;border-bottom:1px #ccc solid;border-top:1px #ccc solid;}
+      .guideindex .guide_tbl .alC {text-align:center !important;}
+      .guideindex .guide_tbl .alL {text-align:left !important;}
+      .guideindex .guide_tbl .alR {text-align:right !important;}
+      .guideindex .guide_tbl{min-width:980px;margin:0 auto;box-sizing: border-box;}
+      .guideindex .guide_tbl a{color:#222;text-decoration:none;}
+      .guideindex .guide_tbl a:hover{color:#161f74;}
+      .guideindex .guide_tbl .chk th,
+      .guideindex .guide_tbl .chk td{color: blue !important;}
+      .guideindex .guide_tbl tbody.add th,
+      .guideindex .guide_tbl tbody.add td{color:#00a383 !important;}
+      .guideindex .guide_tbl tbody.add2 th,
+      .guideindex .guide_tbl tbody.add2 td{color:#a38300 !important;}
+      .guideindex .guide_tbl .caution{color:#f00;font-size:12px;text-align:left;}
+      .guideindex .guide_tbl .complete{background-color:#ccc;}
+      .guideindex .guide_tbl .remove{background-color:#fdeaea;}
+      .guideindex .guide_tbl .graytxt{color:#888;font-size:12px;}
+      .guideindex .guide_tbl .color-blue{color:#161f74;}
+      .guideindex .guide_tbl .del {background:#ddd !important;}
+      .guideindex .guide_tbl .del * {text-decoration:line-through;}
+      .guideindex .guide_tbl .del .caution {text-decoration:none;}
+  </style>
+  
+	<script src="js/jquery_2.1.1.min.js"></script>
+  <script>
+    $(document).ready(function(){
+      $(".num").each(function(index){
+        index+=1;
+        $(this).text(index);
+      });
+    });
+  </script>
+</head>
+
+<body>
+  <div class="guideindex">
+    <h1 class="guideh1">대보hausD오픈 INDEX</h1>
+    <h2 class="guideh2">폴더구조</h2>
+    <table class="guide_tbl">
+      <colgroup>
+        <col style="width:25%" />
+        <col style="width:25%" />
+        <col style="width:25%" />
+        <col style="width:25%" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">시스템</th>
+          <th scope="col">분류</th>
+          <th scope="col" colspan="2">폴더명</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td class="alL" rowspan="11">klpgas/</td>
+          <td class="alL">/html</td>
+        </tr>
+        <tr>
+          <td class="alL" colspan="3">/font</td>
+        </tr>
+        <tr>
+          <td class="alL" colspan="3">/js</td>
+        </tr>
+        <tr>
+          <td class="alL" rowspan="4">/css</td>
+          <td class="alL">reset.css</td>
+          <td class="alL">초기화</td>
+        </tr>
+        <tr>
+          <td class="alL">jquery_library.css</td>
+          <td class="alL">라이브러리</td>
+        </tr>
+        <tr>
+          <td class="alL">common.css</td>
+          <td class="alL">common/layout/component</td>
+        </tr>
+        <tr>
+          <td class="alL">style.css</td>
+          <td class="alL">style</td>
+        </tr>
+        <tr>
+          <td class="alL" rowspan="3">/img</td>
+          <td class="alL">/common</td>
+          <td class="alL">공통 이미지</td>
+        </tr>
+        <tr>
+          <td class="alL">/sub</td>
+          <td class="alL">서브 이미지</td>
+        </tr>
+        <tr>
+          <td class="alL">/temp</td>
+          <td class="alL">테스트 이미지</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2 class="guideh2">작업리스트</h2>
+    <table class="guide_tbl">
+      <colgroup>
+        <col style="width:5%" />
+        <col style="width:13%" />
+        <col style="width:13%" />
+        <col style="width:13%" />
+        <col style="width:13%" />
+        <col style="width:9%" />
+        <col style="width:7%" />
+        <col style="width:auto" />
+      </colgroup>
+      <thead>
+        <tr>
+          <th scope="col">번호</th>
+          <th scope="col">1Depth</th>
+          <th scope="col">2Depth</th>
+          <th scope="col">3Depth</th>
+          <th scope="col">파일명</th>
+          <th scope="col">완료일</th>
+          <th scope="col">작업자</th>
+          <th scope="col">수정사항</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">메인</td>
+          <td class="alL"></td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/main.html" target="_blank">main.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td rowspan="6" class="alL">대회소개</td>
+          <td class="alL">대회개요</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/instroduct.html" target="_blank">instroduct.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">대회일정</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/schedule.html" target="_blank">schedule.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">장소소개</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/place.html" target="_blank">place.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">참가선수</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/player.html" target="_blank">player.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">F&amp;B</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/fnb.html" target="_blank">fnb.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">협찬사</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/company.html" target="_blank">company.html</a></td>
+          <td>2차</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">대회뉴스</td>
+          <td class="alL"></td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/media.html" target="_blank">media.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">이벤트안내</td>
+          <td class="alL"></td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/event_list.html" target="_blank">event_list.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td rowspan="4" class="alL">이벤트 상세</td>
+          <td class="alL">클럽디 주니어</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/event_detail1.html" target="_blank">event_detail1.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">하나 하나 쌓아가는 행복</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/event_detail2.html" target="_blank">event_detail2.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">한국의 대표 전통 놀이 체험</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/event_detail3.html" target="_blank">event_detail3.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">남녀노소 즐기는 전통문화 체험</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/event_detail4.html" target="_blank">event_detail4.html</a></td>
+          <td>2023-08-13</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td rowspan="2" class="alL">관람 안내</td>
+          <td class="alL">관람정책</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/#.html" target="_blank">#.html</a></td>
+          <td>2차</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        <tr>
+          <th scope="row" class="num"></th>
+          <td class="alL">주차&amp;셔틀안내</td>
+          <td class="alL"></td>
+          <td class="alL"><a href="html/#.html" target="_blank">#.html</a></td>
+          <td>2차</td>
+          <td>조우빈</td>
+          <td class="caution">
+          </td>
+        </tr>
+        
+      </tbody>
+    </table>
+  </div>
+</body>
+</html>

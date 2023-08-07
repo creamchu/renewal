@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+/**
+ * --------------------------------
+ * style CSS
+ * creator : chowoobin
+ * --------------------------------
+*/
+
+/* main */
+#wrap.main {background:url('../img/common/bg_main.jpg') no-repeat 50% 50%;background-size:cover;}
+#wrap.main:after {content:"";position:fixed;top:0;left:0;right:0;bottom:0;background:rgba(0,0,0,.3);}
+#wrap.main .header {background:transparent;}
+#wrap.main .header .logo a {background-image:url('../img/common/header_logo_white.svg');}
+#wrap.main .header .gnb > ul > li > a {color:#fff;}
+#wrap.main .header .ticket .btn_ticket {color:#fff;border-color:#fff;}
+#wrap.main .header .menu .btn_menu {background-image:url('../img/common/btn_menu_white.svg');}
+.main_visual {position:fixed;bottom:100px;left:50%;width:100%;max-width:1200px;color:#fff;z-index:1;transform:translateX(-50%);}
+.main_visual .desc {margin-top:24px;font-size:21px;line-height:34px;}
+
+/* 대회소개 */
+/* .instroduct {} */
+
+/* 대회일정 */
+.schedule_list ul {display:flex;width:100%;}
+.schedule_list li {width:17%;height:240px;padding:2.5% 0 0 3.3%;border:1px solid #ebebeb;}
+.schedule_list li .day {color:#565656;font-size:17px;}
+.schedule_list li .date {display:block;margin-top:24px;color:#7e192c;font-size:42px;font-weight:700;line-height:57px;}
+.schedule_list li .desc {margin-top:8px;color:#000;font-size:17px;line-height:27px;}
+
+/* 장소소개 */
+.place .tbl_col + .tbl_col {margin-top:0;}
+
+/* 참가선수 */
+/* .player {} */
+
+/* F&B */
+.fnb .list_dot > li + li {margin-top:30px;}
+.fnb .thumb_list {display:flex;flex-wrap:wrap;gap:40px;margin-top:16px;}
+.fnb .thumb_list li {text-align:center;}
+.fnb .thumb_list span {display:block;margin-top:16px;color:#000;font-size:20px;}
+
+/* 협찬사 */
+.company .thumb_list {display:flex;flex-wrap:wrap;gap:40px 50px;margin-top:40px;}
+.company .thumb_list li {width:200px;height:200px;padding-top:30px;border:1px solid #d3d3d3;text-align:center;}
+.company .thumb_list strong {display:block;margin-top:10px;color:#000;font-size:18px;font-weight:700;}
+
+/* 대회 뉴스 */
+/* .media {} */
+
+/* 이벤트 */
+.eventlist .thumb {display:flex;flex-wrap:wrap;align-items:start;gap:40px;justify-content:center;position:relative;margin:40px auto 0;}
+.eventlist .thumb > li {position:relative;width:33%;min-width:340px;}
+.eventlist .thumb > li.is_video .imgbox:before {content:"";display:block;position:absolute;top:50%;left:50%;width:80px;height:80px;background:url('../img/sub/ico_video.svg');z-index:1;transform:translate(-50%, -50%);}
+.eventlist .thumb > li > a {display:block;margin-bottom:40px;text-align:center;}
+.eventlist .thumb .imgbox {position:relative;}
+.eventlist .thumb .textbox {margin-top:12px;}
+.eventlist .thumb .textbox strong {display:block;color:#7e192c;font-size:20px;font-weight:700;line-height:30px;}
+.eventlist .thumb .textbox p {margin-top:12px;color:#565656;font-size:17px;line-height:24px;}
+
+/* 이벤트 상세 */
+.eventdetail .thumb {display:block;position:relative;max-width:1000px;margin:0 auto;overflow:hidden;}
+.eventdetail .thumb .imgbox::after {content:"";position:absolute;top:0;left:0;width:100%;height:100%;background:rgba(0,0,0,.5);}
+.eventdetail .thumb .textbox {position:absolute;bottom:40px;left:40px;color:#fff;}
+.eventdetail .thumb .textbox strong {font-size:36px;font-weight:700;}
+.eventdetail .thumb .textbox ul {min-height:84px;margin-top:20px;}
+.eventdetail .thumb .textbox ul li {font-size:20px;line-height:28px;}
+
+
+/* PC : 1412px이하 */
+@media all and (max-width:1412px){
+  /* main */
+  .main_visual {padding:0 20px;}
+}
+
+/* MO : 767px이하 */
+@media all and (max-width:767px){
+  /* main */
+  .main_visual {bottom:100px;}
+  .main_visual .desc {margin-top:20px;font-size:12px;line-height:18px;}
+
+  /* 대회소개 */
+  /* .instroduct {} */
+
+  /* 대회일정 */
+  .schedule_list ul {flex-wrap:wrap;}
+  .schedule_list li {width:50%;height:200px;padding:30px;}
+  .schedule_list li .day {font-size:13px;}
+  .schedule_list li .date {margin-top:16px;font-size:35px;line-height:40px;}
+  .schedule_list li .desc {margin-top:8px;font-size:14px;line-height:24px;}
+
+  /* 장소소개 */
+  /* .place {} */
+
+  /* 참가선수 */
+  /* .player {} */
+
+  /* F&B */
+  .fnb .list_dot > li {font-size:16px;}
+  .fnb .list_dot > li + li {margin-top:14px;}
+  .fnb .thumb_list {gap:14px;margin-top:8px;}
+  .fnb .thumb_list img {max-width:70px;}
+  .fnb .thumb_list span {margin-top:8px;font-size:12px;}
+
+  /* 협찬사 */
+  .company .thumb_list {gap:10px;margin-top:30px;}
+  .company .thumb_list li {width:calc(33.333% - 7px);height:auto;padding:14px 0;}
+  .company .thumb_list img {width:60px;}
+  .company .thumb_list strong {margin-top:7px;font-size:12px;}
+
+  /* 대회 뉴스 */
+  .media .content {padding-bottom:60px;}
+
+  /* 이벤트 */
+  .eventlist .thumb {margin-top:30px;}
+  .eventlist .thumb > li {width:100%;min-width:auto;}
+  .eventlist .thumb > li.is_video .imgbox:before {content:"";display:block;position:absolute;top:50%;left:50%;width:80px;height:80px;background:url('../img/sub/ico_video.svg');z-index:1;transform:translate(-50%, -50%);}
+  .eventlist .thumb > li > a {margin-bottom:0;}
+  .eventlist .thumb .imgbox img {width:200px;}
+  .eventlist .thumb .textbox {margin-top:20px;}
+  .eventlist .thumb .textbox strong {font-size:16px;line-height:26px;}
+  .eventlist .thumb .textbox p {margin-top:10px;font-size:13px;line-height:20px;}
+  
+  /* 이벤트 상세 */
+  .eventdetail .content {height:calc(100% - 61px);padding:0;overflow:hidden;}
+  .eventdetail .thumb {height:100%;}
+  .eventdetail .thumb .imgbox img {position:absolute;top:0;height:100%;transform:translateX(-50%);}
+  .eventdetail .thumb .textbox {bottom:30px;left:16px;right:30px;}
+  .eventdetail .thumb .textbox strong {font-size:20px;}
+  .eventdetail .thumb .textbox ul li {display:flex;margin-top:3px;font-size:14px;line-height:20px;}
+  .eventdetail .thumb .textbox .head {min-width:65px;}
+}
