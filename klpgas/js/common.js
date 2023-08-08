@@ -48,22 +48,6 @@ var fn = (function() {
 $(window).on('load', function(){
 	//init
 	fn.common();
-	
-	//thumblistswiper
-	var $thumblistswiperObj = $(".thumblistswiper");
-	if ( $thumblistswiperObj.find(".swiper-slide").length > 1 ){
-			var thumblistswiper = new Swiper(".thumblistswiper", {
-					slidesPerView: 4,
-					spaceBetween: 20,
-					navigation: {
-							nextEl: ".swiper-button-next",
-							prevEl: ".swiper-button-prev",
-					},
-					observer: true,
-					observeParents: true,
-			});
-	}
-
 
 });
 

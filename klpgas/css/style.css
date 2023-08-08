@@ -23,7 +23,8 @@
 
 /* 대회일정 */
 .schedule_list ul {display:flex;width:100%;}
-.schedule_list li {width:17%;height:240px;padding:2.5% 0 0 3.3%;border:1px solid #ebebeb;}
+.schedule_list li {width:17%;height:240px;padding:2.5% 0 0 3.3%;border:1px solid #ebebeb;border-left:none;}
+.schedule_list li:first-child {border-left:1px solid #ebebeb;}
 .schedule_list li .day {color:#565656;font-size:17px;}
 .schedule_list li .date {display:block;margin-top:24px;color:#7e192c;font-size:42px;font-weight:700;line-height:57px;}
 .schedule_list li .desc {margin-top:8px;color:#000;font-size:17px;line-height:27px;}
@@ -53,9 +54,11 @@
 .eventlist .thumb > li {position:relative;width:33%;min-width:340px;}
 .eventlist .thumb > li.is_video .imgbox:before {content:"";display:block;position:absolute;top:50%;left:50%;width:80px;height:80px;background:url('../img/sub/ico_video.svg');z-index:1;transform:translate(-50%, -50%);}
 .eventlist .thumb > li > a {display:block;margin-bottom:40px;text-align:center;}
+.eventlist .thumb > li > a:hover .textbox strong {color:#7e192c;}
+.eventlist .thumb > li > a:hover .textbox p {color:#000;}
 .eventlist .thumb .imgbox {position:relative;}
 .eventlist .thumb .textbox {margin-top:12px;}
-.eventlist .thumb .textbox strong {display:block;color:#7e192c;font-size:20px;font-weight:700;line-height:30px;}
+.eventlist .thumb .textbox strong {display:block;color:#000;font-size:20px;font-weight:700;line-height:30px;}
 .eventlist .thumb .textbox p {margin-top:12px;color:#565656;font-size:17px;line-height:24px;}
 
 /* 이벤트 상세 */
@@ -67,8 +70,21 @@
 .eventdetail .thumb .textbox ul li {font-size:20px;line-height:28px;}
 
 /* 관람정책 */
+.policy .h3_tit {margin-bottom:0;}
+.policy .h3_tit ~ .h3_tit {margin-top:60px;}
+.policy .colbox {gap:30px;margin-top:30px;}
+.policy .colbox .col {width:50%;}
+.policy .colbox .col img {max-width:100%;}
+.policy .define_list {margin-top:0;}
+.policy .define_list > li {margin-top:16px;}
+.policy .define_list > li:first-child {margin-top:0;}
+.policy .define_list dl dt {padding:11px 17px;}
+.policy .define_list dl dd .head {display:block;margin-bottom:10px;color:#111;font-size:17px;font-weight:700;line-height:21px;}
+.policy .define_list dl dd .head ~ .head {margin-top:20px;}
+.policy .define_list .info p {font-size:17px;}
+.policy .tbl_col {margin-top:20px;}
 .policy .tbl_col tbody td {padding:12px 30px;text-align:left;}
-.policy .tbl_col .list_dot_small {margin-top:0;}
+.policy .tbl_col tbody td + td {border-left:1px solid rgba(0, 0, 0, 0.1);}
 
 /* 주차&셔틀안내 */
 .map .h3_tit {margin-bottom:16px;}
@@ -95,6 +111,8 @@
   /* 대회일정 */
   .schedule_list ul {flex-wrap:wrap;}
   .schedule_list li {width:50%;height:200px;padding:30px;}
+  .schedule_list li:nth-of-type(odd) {border-left:1px solid #ebebeb;}
+  .schedule_list li:nth-of-type(n+3) {border-top:none;}
   .schedule_list li .day {font-size:13px;}
   .schedule_list li .date {margin-top:16px;font-size:35px;line-height:40px;}
   .schedule_list li .desc {margin-top:8px;font-size:14px;line-height:24px;}
@@ -139,9 +157,25 @@
   .eventdetail .thumb .textbox ul li {display:flex;margin-top:3px;font-size:14px;line-height:20px;}
   .eventdetail .thumb .textbox .head {min-width:65px;}
 
+  /* 관람정책 */
+  .policy .h3_tit ~ .h3_tit {margin-top:40px;}
+  .policy .colbox {display:flex;flex-wrap:wrap;gap:27px;margin-top:12px;}
+  .policy .colbox .col {width:100%;}
+  .policy .colbox .col.imgbox {width:calc(100% + 32px);margin-left:-16px;margin-right:-16px;}
+  .policy .define_list > li {margin-top:12px;}
+  .policy .define_list dl {display:flex;}
+  .policy .define_list dl dt {min-width:70px;padding:6px;}
+  .policy .define_list dl dd {padding-top:3px;margin-left:8px;}
+  .policy .define_list dl dd .head {margin-bottom:4px;font-size:14px;line-height:18px;}
+  .policy .define_list dl dd .head ~ .head {margin-top:16px;}
+  .policy .define_list .info p {font-size:14px;}
+  .policy .tbl_col {margin-top:12px;}
+  .policy .tbl_col .linebreak {display:block;line-height:20px;}
+
   /* 주차&셔틀안내 */
   .map .h3_tit {margin-bottom:10px;}
   .map .h3_tit ~ .h3_tit {margin-top:35px;}
   .map .list_dot > li + li {margin-top:4px;}
   .map .define_list {margin-left:-12px;}
+  .policy .tbl_col tbody td {padding:15px 3px 15px 15px;vertical-align:top;letter-spacing:-0.05em;}
 }
