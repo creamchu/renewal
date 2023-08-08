@@ -45,7 +45,7 @@
 .company .thumb_list li {width:200px;height:200px;padding-top:30px;border:1px solid #d3d3d3;text-align:center;}
 .company .thumb_list strong {display:block;margin-top:10px;color:#000;font-size:18px;font-weight:700;}
 
-/* 대회 뉴스 */
+/* 대회뉴스 */
 /* .media {} */
 
 /* 이벤트 */
@@ -65,6 +65,16 @@
 .eventdetail .thumb .textbox strong {font-size:36px;font-weight:700;}
 .eventdetail .thumb .textbox ul {min-height:84px;margin-top:20px;}
 .eventdetail .thumb .textbox ul li {font-size:20px;line-height:28px;}
+
+/* 관람정책 */
+.policy .tbl_col tbody td {padding:12px 30px;text-align:left;}
+.policy .tbl_col .list_dot_small {margin-top:0;}
+
+/* 주차&셔틀안내 */
+.map .h3_tit {margin-bottom:16px;}
+.map .h3_tit ~ .h3_tit {margin-top:35px;}
+.map .list_dot > li + li {margin-top:10px;}
+.map .define_list {margin-left:-12px;}
 
 
 /* PC : 1412px이하 */
@@ -96,7 +106,6 @@
   /* .player {} */
 
   /* F&B */
-  .fnb .list_dot > li {font-size:16px;}
   .fnb .list_dot > li + li {margin-top:14px;}
   .fnb .thumb_list {gap:14px;margin-top:8px;}
   .fnb .thumb_list img {max-width:70px;}
@@ -108,7 +117,7 @@
   .company .thumb_list img {width:60px;}
   .company .thumb_list strong {margin-top:7px;font-size:12px;}
 
-  /* 대회 뉴스 */
+  /* 대회뉴스 */
   .media .content {padding-bottom:60px;}
 
   /* 이벤트 */
@@ -129,4 +138,10 @@
   .eventdetail .thumb .textbox strong {font-size:20px;}
   .eventdetail .thumb .textbox ul li {display:flex;margin-top:3px;font-size:14px;line-height:20px;}
   .eventdetail .thumb .textbox .head {min-width:65px;}
+
+  /* 주차&셔틀안내 */
+  .map .h3_tit {margin-bottom:10px;}
+  .map .h3_tit ~ .h3_tit {margin-top:35px;}
+  .map .list_dot > li + li {margin-top:4px;}
+  .map .define_list {margin-left:-12px;}
 }
