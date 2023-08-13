@@ -269,7 +269,7 @@ select::-ms-expand {display:none;}
   .header .gnb .m_depth1.is_active:after {background-image:url("../img/common/btn_gnb_toggle_active.svg");transform:rotate(0);}
   .header .gnb > ul {display:block;}
   .header .gnb > ul > li > a {padding:16px;color:#000;font-size:16px;border-bottom:1px solid #e3e3e3;}
-  .header .gnb > ul > li > a:hover {color:#811e30;}
+  .header .gnb > ul > li > a:hover {color:#811e30 !important;}
 
   .header .m_gnb_head {display:flex;align-items:center;justify-content:space-between;padding:14px 16px;background:#811e30;}
   .header .m_gnb_head .m_gnb_logo a {display:block;width:160px;height:24px;background:url('../img/common/header_logo_white.svg') no-repeat 0 0/100%;}
@@ -278,7 +278,7 @@ select::-ms-expand {display:none;}
   .header .btn_gnb_close {position:fixed;top:19px;right:18px;width:24px;height:24px;background:url("../img/common/btn_gnb_close.svg") no-repeat 0 0;}
   .header .ticket {margin-left:0;padding:20px 16px 38px;}
   .header .ticket .btn_ticket {width:100%;color:#811e30;border-color:#811e30;border-radius:4px;}
-  .header .ticket .btn_ticket:hover {background:#811e30;}
+  .header .ticket .btn_ticket:hover {background:#811e30;color:#fff !important;border-color:#811e30 !important;}
 
   /* depth2_list */
   .depth2_list {position:static;width:100%;padding:0 16px;background:#f4f4f4;box-shadow:none;}
