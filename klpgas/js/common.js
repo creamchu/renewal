@@ -17,27 +17,35 @@ var fn = (function() {
 
 		//gnb
 		gnb : function(){
-			$(".gnb > ul > li > a").hover(function(){
-				$(this).siblings(".depth2_list").addClass("is_open");
-			});
-			$(".gnb > ul > li").on("mouseleave", function(){
-				$(this).find(".depth2_list").removeClass("is_open");
-			});
+			//pc
+			if($(window).width() > 1240) {
+				$(".gnb > ul > li > a").hover(function(){
+					$(this).siblings(".depth2_list").addClass("is_open");
+				});
+				$(".gnb > ul > li").on("mouseleave", function(){
+					$(this).find(".depth2_list").removeClass("is_open");
+					$(".header .gnb .m_depth1").removeClass("is_active");
+				});
+			}
 
-
-			$(".header .depth2 .depth2_btn").on("click", function(){
-
-				if($(this).closest(".depth2").hasClass("is_active")){
-					$(".depth2").removeClass("is_active");
-					$("body").removeClass("ov_hidden");
+			//mobile
+			$(".header .gnb .m_depth1").on("click", function(){
+				if($(this).siblings(".depth2_list").hasClass("is_open")){
+					$(this).removeClass("is_active");
+					$(this).siblings(".depth2_list").removeClass("is_open");
 
 				} else {
-					$(".depth2").addClass("is_active");
-
-					if($(window).width() <= 767) {
-						$("body").addClass("ov_hidden");
-					}
+					$(this).addClass("is_active");
+					$(this).siblings(".depth2_list").addClass("is_open");
 				}
+			});
+			$(".header .menu .btn_menu").on("click", function(){
+				$(".header .header_info").addClass("is_open");
+				$("body").addClass("ov_hidden");
+			});
+			$(".header .btn_gnb_close").on("click", function(){
+				$(".header .header_info").removeClass("is_open");
+				$("body").removeClass("ov_hidden");
 			});
 		},
 

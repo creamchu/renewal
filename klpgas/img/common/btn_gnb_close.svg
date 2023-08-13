@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="24" height="24" viewBox="0 0 24 24">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-3 {
+        fill: none;
+        stroke: #fff;
+        stroke-linecap: round;
+        stroke-width: 2px;
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_4467" data-name="사각형 4467" class="cls-1" width="24" height="24"/>
+    </clipPath>
+  </defs>
+  <g id="close" class="cls-2">
+    <g id="close-2" data-name="close" transform="translate(4 4)">
+      <line id="선_710" data-name="선 710" class="cls-3" x1="16" y2="16"/>
+      <line id="선_711" data-name="선 711" class="cls-3" x2="16" y2="16"/>
+    </g>
+  </g>
+</svg>
