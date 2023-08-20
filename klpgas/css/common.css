@@ -287,6 +287,7 @@ select::-ms-expand {display:none;}
   .depth2_list {position:static;width:100% !important;padding:0 16px;background:#f4f4f4;box-shadow:none;}
   .depth2_list .item {padding:0;border-bottom:1px solid #e3e3e3;}
   .depth2_list .item:last-child {border-bottom:none;}
+  .depth2_list .item.is_active .tit {color:#811e30;}
   .depth2_list .item .tit {padding:14px 0 12px;background:url("../img/common/btn_gnb_depth2.svg") no-repeat 100% 50%;font-size:14px;}
   .depth2_list .item .tit:hover {color:#811e30;}
 
