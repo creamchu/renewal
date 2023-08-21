@@ -61,9 +61,10 @@ input:focus::placeholder{color:transparent}
 input[type="checkbox"] {position:absolute;width:0;height:0;font-size:0;line-height:0;opacity:0;overflow:hidden;}
 input[type="checkbox"] + span {display:inline-block;position:relative;min-height:20px;padding-left:26px;line-height:24px;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none;cursor:pointer;vertical-align:top;}
 input[type="checkbox"] + span:before {content:"";display:inline-block;position:absolute;top:0;left:0;width:20px;height:20px;background:url("../img/form_chk.svg") no-repeat 0 0;background-position-y:0;background-size:100%;}
-input[type="checkbox"]:checked + span:after {content:"";display:inline-block;position:absolute;top:5px;left:2px;width:15px;height:11px;background:url("../img/form_chk_checked.svg") no-repeat 0 0;background-position-y:0;background-size:100%;z-index:1;}
+input[type="checkbox"]:checked + span:after {content:"";display:inline-block;position:absolute;top:4px;left:2px;width:15px;height:11px;background:url("../img/form_chk_checked.svg") no-repeat 0 0;background-position-y:0;background-size:100%;z-index:1;}
 input[type="checkbox"]:disabled + span:before {background-image:url("../img/form_chk_disable.svg");}
 input[type="checkbox"]:checked:disabled + span:before {background-image:url("../img/form_chk_disablechecked.svg");}
+input[type="checkbox"]:checked:disabled + span:after {display:none;}
 input[type="checkbox"]:disabled + span,
 input[type="checkbox"]:checked:disabled + span {cursor:default;}
 input[type="checkbox"] ~ span.bg_color,
@@ -290,7 +291,7 @@ select::-ms-expand {display:none;}
 .payment_gift > li + li {margin-top:12px;}
 .payment_gift > li.nodata {padding:20px;background:transparent;text-align:center;box-shadow:none;}
 .payment_gift label {display:block;padding:17px 20px;}
-.payment_gift label input[type="checkbox"]:checked ~ span.bg_color {top:18px;left:20px;}
+.payment_gift label input[type="checkbox"]:checked ~ span.bg_color {top:17px;left:20px;}
 .payment_gift label .tit {display:block;color:#000;font-size:16px;font-weight:normal;}
 .payment_gift label .sub {margin-top:5px;color:#565656;font-size:14px;}
 .payment_gift label .sub .sort:before {content:"";display:inline-block;margin-right:8px;height:10px;border-left:1px solid #e3e3e3;}
