@@ -282,7 +282,7 @@
   .history .list_dot_small li {font-size:13px;line-height:24px;}
   .history .list_dot_small li::before {top:11px;}
   .history .colbox {display:flex;flex-wrap:wrap;gap:20px;margin-top:30px;}
-  .history .colbox:nth-child(even) {flex-direction:column-reverse;}
+  .history .colbox:nth-child(odd) {flex-direction:column-reverse;}
   .history .colbox ~ .colbox {margin-top:40px;}
   .history .colbox .col {width:100%;}
   .history .colbox .col.imgbox {width:100%;}
