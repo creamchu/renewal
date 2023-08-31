@@ -187,7 +187,7 @@ select::-ms-expand {display:none;}
 .define_list > li {margin-top:16px;}
 .define_list > li:first-child {margin-top:0;}
 .define_list dl {display:flex;align-items:flex-start;}
-.define_list dl dt {min-width:100px;padding:10px 17px 8px;background:#7e192c;color:#fff;font-size:17px;font-weight:700;text-align:center;border-radius:50px;}
+.define_list dl dt {min-width:100px;padding:10px 17px 9px;background:#7e192c;color:#fff;font-size:17px;font-weight:700;text-align:center;border-radius:50px;}
 .define_list dl dd {padding-top:10px;padding-left:12px;}
 .define_list dl dd .head {display:block;margin-bottom:10px;color:#111;font-size:17px;font-weight:700;line-height:21px;}
 .define_list dl dd .head ~ .head {margin-top:20px;}
@@ -215,7 +215,7 @@ select::-ms-expand {display:none;}
 .tbl_col table {text-align:center;border-top:1px solid #333333;}
 .tbl_col thead th {padding:12px 5px;background:#7e192c;color:#fff;font-size:17px;font-weight:700;line-height:28px;}
 .tbl_col tbody th {padding:9px 12px;background:#f4f4f4;color:#000;font-size:17px;font-weight:700;line-height:28px;border-bottom:1px solid rgba(0, 0, 0, 0.1);}
-.tbl_col tbody td {padding:9px 12px;color:#000;font-size:17px;line-height:28px;border-bottom:1px solid rgba(0, 0, 0, 0.1);}
+.tbl_col tbody td {padding:9px 12px;color:#000;font-size:17px;line-height:28px;border-left:1px solid rgba(0, 0, 0, 0.1);border-bottom:1px solid rgba(0, 0, 0, 0.1);}
 .tbl_col tbody tr:last-child th,
 .tbl_col tbody tr:last-child td {border-bottom:1px solid rgba(0, 0, 0, 0.5);}
 .tbl_col .nodata {padding:100px 0;text-align:center;}
@@ -242,7 +242,7 @@ select::-ms-expand {display:none;}
 .thumblist {display:flex;flex-wrap:wrap;align-items:start;gap:60px 24px;position:relative;margin:40px auto 0;}
 .thumblist > li {position:relative;width:calc(33.333% - 17px);}
 .thumblist > li > a {display:block;}
-.thumblist > li > a:hover * {color:#333;}
+.thumblist > li > a:hover .title {color:#842335;}
 .thumblist .imgbox {position:relative;width:100%;height:280px;overflow:hidden;}
 .thumblist .imgbox img {position:absolute;top:50%;left:50%;min-width:100%;min-height:100%;transform:translate(-50%,-50%);}
 .thumblist .textbox {padding-top:30px;}

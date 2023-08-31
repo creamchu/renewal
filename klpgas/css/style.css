@@ -38,9 +38,11 @@
 
 /* 갤러리플라자 */
 .fnb .list_dot > li + li {margin-top:30px;}
-.fnb .thumb_list {display:flex;flex-wrap:wrap;gap:40px;margin-top:16px;}
+.fnb .thumb_list {display:flex;flex-wrap:wrap;gap:40px;margin-top:16px;margin-bottom:14px;}
 .fnb .thumb_list li {text-align:center;}
 .fnb .thumb_list span {display:block;margin-top:16px;color:#000;font-size:20px;}
+.fnb .define_list dl.no_flex {flex-wrap:wrap;}
+.fnb .define_list dl.no_flex dd {width:100%;padding-top:0;}
 
 /* 협찬사 */
 .company .thumb_list {display:flex;flex-wrap:wrap;gap:40px 50px;margin-top:40px;}
@@ -76,10 +78,10 @@
 .policy .h3_tit ~ .h3_tit {margin-top:60px;}
 .policy .colbox {gap:30px;margin-top:30px;}
 .policy .colbox .col {width:50%;}
+.policy .colbox .col.imgbox2 {padding-top:70px;text-align:right;}
 .policy .colbox .col img {max-width:100%;}
 .policy .tbl_col {margin-top:20px;}
 .policy .tbl_col tbody td {padding:12px 30px;text-align:left;}
-.policy .tbl_col tbody td + td {border-left:1px solid rgba(0, 0, 0, 0.1);}
 .policy .list_dot {margin-top:30px;}
 .policy .list_dot > li + li {margin-top:10px;}
 
@@ -183,9 +185,11 @@
 
   /* 갤러리플라자 */
   .fnb .list_dot > li + li {margin-top:14px;}
-  .fnb .thumb_list {gap:14px;margin-top:8px;}
+  .fnb .thumb_list {gap:14px;}
   .fnb .thumb_list img {max-width:70px;}
   .fnb .thumb_list span {margin-top:8px;font-size:12px;}
+  .fnb .define_list dl {align-items:center;}
+  .fnb .define_list .info p {margin-bottom:0;font-size:16px;}
 
   /* 협찬사 */
   .company .thumb_list {gap:10px;margin-top:30px;}
@@ -219,8 +223,10 @@
   /* 관람정책 */
   .policy .h3_tit ~ .h3_tit {margin-top:40px;}
   .policy .colbox {display:flex;flex-wrap:wrap;gap:27px;margin-top:12px;}
+  .policy .colbox ~ .colbox {margin-top:40px;}
   .policy .colbox .col {width:100%;}
   .policy .colbox .col.imgbox {width:calc(100% + 32px);margin-left:-16px;margin-right:-16px;}
+  .policy .colbox .col.imgbox2 {padding-top:0;text-align:center;}
   .policy .tbl_col {margin-top:12px;}
   .policy .tbl_col tbody td {padding:12px 16px;vertical-align:top;}
   .policy .tbl_col .linebreak {display:block;line-height:20px;}
