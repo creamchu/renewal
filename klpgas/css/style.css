@@ -45,9 +45,10 @@
 .fnb .define_list dl.no_flex dd {width:100%;padding-top:0;}
 
 /* 협찬사 */
-.company .thumb_list {display:flex;flex-wrap:wrap;gap:40px 50px;margin-top:40px;}
+.company .thumb_list {display:flex;flex-wrap:wrap;justify-content:center;gap:40px 50px;margin-top:40px;}
 .company .thumb_list li {width:200px;height:200px;border:1px solid #d3d3d3;text-align:center;}
 .company .thumb_list li a {display:block;height:100%;padding-top:30px;}
+.company .thumb_list li img {width:112px;}
 .company .thumb_list strong {display:block;margin-top:10px;color:#000;font-size:18px;font-weight:700;}
 
 /* 대회뉴스 */
@@ -195,7 +196,7 @@
   .company .thumb_list {gap:10px;margin-top:30px;}
   .company .thumb_list li {width:calc(33.333% - 7px);height:auto;}
   .company .thumb_list li a {padding:14px 0;}
-  .company .thumb_list img {width:60px;}
+  .company .thumb_list li img {width:60px;}
   .company .thumb_list strong {margin-top:7px;font-size:12px;}
 
   /* 대회뉴스 */
@@ -219,6 +220,7 @@
   .eventdetail .thumb .textbox strong {font-size:20px;}
   .eventdetail .thumb .textbox ul li {display:flex;margin-top:3px;font-size:14px;line-height:20px;}
   .eventdetail .thumb .textbox .head {min-width:65px;}
+  .eventdetail .thumb .textbox .head2 {min-width:36px;}
 
   /* 관람정책 */
   .policy .h3_tit ~ .h3_tit {margin-top:40px;}
