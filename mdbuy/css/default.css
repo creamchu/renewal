@@ -213,7 +213,7 @@ body.pop_open {overflow:hidden;}
 .payment_info .payment_count .btn_down:after {background-image:url('../img/btn_down.png');}
 .payment_info .payment_count .btn_down.is_active:after {background-image:url('../img/btn_down_active.png');}
 .payment_info .payment_count .btn_up {right:0;border-left:1px solid #dedddd;}
-.payment_info .payment_count .btn_up:after {background-image:url('../img/btn_up_active.png');}
+.payment_info .payment_count .btn_up:after {background-image:url('../img/btn_up_active.svg');}
 .payment_info .payment_count .btn_up.is_stop:after {background-image:url('../img/btn_up.png');}
 
 /* 장바구니 */
