@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="x-ua-compatible" content="IE=EDGE">
+	<meta name="Author" content="서원레저">
+	<meta name="keywords" content="대보hausD오픈">
+	<meta name="description" content="대보hausD오픈">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>구매완료 - 대보hausD오픈</title>
+	<!-- source// -->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/jquery_library.css">
+	<link rel="stylesheet" href="../css/default.css">
+	<link rel="stylesheet" href="../css/mobile.css">
+	<script src="../js/jquery_2.1.1.min.js"></script>
+	<script src="../js/jquery_library.js"></script>
+	<script src="../js/common.js"></script>
+	<!-- //source -->
+
+</head>
+
+<body>
+	<div id="wrap">
+
+		<!-- S : #content -->
+		<div id="content">
+
+			<!-- S : visual_banner -->
+			<section id="visualbanner" class="visual_banner"></section>
+			<!-- E : visual_banner -->
+
+			<!-- S : content_area -->
+			<article class="content_area">
+
+				<form>
+					<legend>구매 완료 정보</legend>
+
+					<fieldset>
+						<!-- S : payment_result -->
+						<div class="payment_result">
+							
+							<h2 class="payment_headline">구매가 완료되었습니다.</h2>
+							<p class="payment_result_txt">구매 시 연락처로 발송된 알림톡을 통해 상세 정보를 확인하실 수 있으며,<br>현장 수령 시 QR 코드를 보여주시기 바랍니다.</p>
+
+							<!-- S : payment_box -->
+							<div class="payment_box">
+
+								<!-- S : 상품 정보 -->
+								<h3 class="h3_title">상품 정보</h3>
+								<div class="payment_info">
+									<img src="../img/temp_120X120.jpg" class="payment_img" alt="대보hausD오픈">
+			
+									<div class="payment_infobox">
+										<strong class="payment_tit">핑 GLE3 여성 드라이버</strong>
+										<p class="payment_txt">옵션 : 옵션명옵션명옵션명옵션명</p>
+										<strong class="payment_price">900,000원</strong>
+									</div>
+								</div>
+								<!-- E : 상품 정보 -->
+
+								<!-- S : 주문자 정보 -->
+								<h3 class="h3_title">주문자 정보</h3>
+								<div class="payment_summary">
+									<dl>
+										<dt>이름</dt>
+										<dd><strong>홍길동</strong></dd>
+			
+										<dt>연락처</dt>
+										<dd><strong>010-1234-5678</strong></dd>
+			
+										<dt>이메일</dt>
+										<dd><strong>abc@abc.com</strong></dd>
+									</dl>
+								</div>
+								<!-- E : 주문자 정보 -->
+			
+								<!-- S : 수령 장소 정보 -->
+								<h3 class="h3_title">수령 장소 정보</h3>
+								<div class="payment_summary">
+									<dl>
+										<dt>매장</dt>
+										<dd><strong>아디다스</strong></dd>
+			
+										<dt>위치</dt>
+										<dd><strong>갤러리 플라자</strong></dd>
+									</dl>
+								</div>
+								<!-- E : 수령 장소 정보 -->
+			
+								<!-- S : 결제정보 -->
+								<h3 class="h3_title">결제정보</h3>
+								<div class="payment_summary">
+									<dl>
+										<dt>상품금액</dt>
+										<dd><strong>99,000원</strong></dd>
+
+										<dt>예매수량</dt>
+										<dd><strong>1개</strong></dd>
+			
+										<dt class="payment_total">총 결제금액</dt>
+										<dd class="payment_total"><strong>99,000원</strong></dd>
+									</dl>
+								</div>
+								<!-- E : 결제정보 -->
+
+							</div>
+							<!-- E : payment_box -->
+		
+							<!-- S : btn_area -->
+							<div class="btn_area">
+								<a href="javascript:;" class="btn red">HOME</a>
+							</div>
+							<!-- E : btn_area -->
+						</div>
+						<!-- E : payment_result -->
+					</fieldset>
+				</form>
+
+			</article>
+			<!-- E : content_area -->
+
+		</div>
+		<!-- E : #content -->
+
+		<!-- S : #footer -->
+		<footer id="footer"></footer>
+		<!-- E : #footer -->
+	</div>
+
+	<script>
+		// 인클루드는 작업 편의를 드리기 위해 데모로 적용했습니다.
+		// 실 작업시 제이쿼리 인클루드는 삭제 해주세요.
+		$(document).ready(function () {
+			$("#visualbanner").load('./layout/visualbanner.html');
+			$("#footer").load('./layout/footer.html');
+		});
+	</script>
+</body>
+</html>

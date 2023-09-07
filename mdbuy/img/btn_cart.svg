@@ -1,0 +1,41 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20" height="20" viewBox="0 0 20 20">
+  <defs>
+    <style>
+      .cls-1, .cls-5 {
+        fill: #fff;
+      }
+
+      .cls-1 {
+        stroke: #707070;
+      }
+
+      .cls-2 {
+        fill: none;
+      }
+
+      .cls-3 {
+        clip-path: url(#clip-path);
+      }
+
+      .cls-4 {
+        clip-path: url(#clip-path-2);
+      }
+    </style>
+    <clipPath id="clip-path">
+      <rect id="사각형_4626" data-name="사각형 4626" class="cls-1" width="20" height="20" transform="translate(512 730.296)"/>
+    </clipPath>
+    <clipPath id="clip-path-2">
+      <rect id="사각형_4625" data-name="사각형 4625" class="cls-2" width="19.131" height="19.367"/>
+    </clipPath>
+  </defs>
+  <g id="cart" class="cls-3" transform="translate(-512 -730.296)">
+    <g id="그룹_13229" data-name="그룹 13229" transform="translate(512.502 730.551)">
+      <g id="그룹_13228" data-name="그룹 13228" class="cls-4">
+        <path id="패스_7864" data-name="패스 7864" class="cls-5" d="M17.905,14.987H7.747c-.129,0-1.269-.024-1.65-.862-.414-.909.441-1.89.721-2.213l.006-.007.592-.661L3.38,1.594.593,1.316A.659.659,0,1,1,.724,0L3.9.321a.659.659,0,0,1,.543.4l4.348,10.4a.66.66,0,0,1-.117.694l-.867.968a1.958,1.958,0,0,0-.5.792,1.136,1.136,0,0,0,.438.1H17.905a.659.659,0,0,1,0,1.318" transform="translate(0.001 0)"/>
+        <path id="패스_7865" data-name="패스 7865" class="cls-5" d="M116,83.79a.659.659,0,0,1-.067-1.315l8.944-.924.665-5.17-12.76-.425a.659.659,0,0,1,.044-1.318l13.484.449a.659.659,0,0,1,.632.743l-.824,6.407a.659.659,0,0,1-.586.572l-9.463.978a.622.622,0,0,1-.069,0" transform="translate(-107.819 -71.757)"/>
+        <path id="패스_7866" data-name="패스 7866" class="cls-5" d="M378.158,403.269a1.977,1.977,0,1,1,1.977-1.977,1.98,1.98,0,0,1-1.977,1.977m0-2.636a.659.659,0,1,0,.659.659.66.66,0,0,0-.659-.659" transform="translate(-361.662 -383.902)"/>
+        <path id="패스_7867" data-name="패스 7867" class="cls-5" d="M158.274,403.269a1.977,1.977,0,1,1,1.978-1.977,1.98,1.98,0,0,1-1.978,1.977m0-2.636a.659.659,0,1,0,.659.659.66.66,0,0,0-.659-.659" transform="translate(-150.264 -383.902)"/>
+      </g>
+    </g>
+  </g>
+</svg>
