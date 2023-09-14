@@ -45,8 +45,8 @@
 .fnb .define_list dl.no_flex dd {width:100%;padding-top:0;}
 
 /* 협찬사 */
-.company .thumb_list {display:flex;flex-wrap:wrap;justify-content:center;gap:40px 50px;margin-top:40px;}
-.company .thumb_list li {width:200px;height:200px;border:1px solid #d3d3d3;text-align:center;}
+.company .thumb_list {display:flex;flex-wrap:wrap;gap:40px 0;margin:40px -25px 0;}
+.company .thumb_list li {width:calc(20% - 50px);margin:0 25px;height:200px;border:1px solid #d3d3d3;text-align:center;}
 .company .thumb_list li a {display:block;height:100%;padding-top:30px;}
 .company .thumb_list li img {width:112px;}
 .company .thumb_list strong {display:block;margin-top:10px;color:#000;font-size:18px;font-weight:700;}
@@ -134,6 +134,10 @@
   #wrap.main .header .ticket .btn_ticket {color:#811e30;border-color:#811e30;}
   .main_visual {padding:0 20px;}
 
+  /* 협찬사 */
+  .company .thumb_list {margin-left:0;margin-right:0;}
+  .company .thumb_list li {width:calc(25% - 20px);margin:0 10px;}
+
   /* 히스토리 2021 */
   .history2021 .imgmap {width:580px;margin-left:auto;margin-right:auto;overflow:hidden;}
   .history2021 .imgmap img {max-width:100%;}
@@ -194,7 +198,7 @@
 
   /* 협찬사 */
   .company .thumb_list {gap:10px;margin-top:30px;}
-  .company .thumb_list li {width:calc(33.333% - 7px);height:auto;}
+  .company .thumb_list li {width:calc(33.333% - 7px);height:auto;margin:0;}
   .company .thumb_list li a {padding:14px 0;}
   .company .thumb_list li img {width:60px;}
   .company .thumb_list strong {margin-top:7px;font-size:12px;}
