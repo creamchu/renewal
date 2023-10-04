@@ -142,7 +142,9 @@
     .thumb_list {gap:30px 15px;}
     .thumb_list li {width:calc(50% - 8px);}
     .thumb_list li.is_soldout .txt_soldout {margin-top:-13px;margin-left:-45px;padding:7px 16px 6px;font-size:13px;}
-    .thumb_list .thumb_img .label {top:6px;left:6px;padding:5px 7px 4px;font-size:11px;}
+    .thumb_list .thumb_img .label {top:6px;left:6px;width:40px;padding:5px 7px 4px;font-size:11px;}
+    .thumb_list .thumb_img .label + .label {left:56px;}
+    .thumb_list .thumb_img .label + .label + .label {left:106px;}
     .thumb_list .thumb_img .txt_cart {bottom:10px;margin-left:-51px;padding:7px 10px 6px;font-size:11px;line-height:13px;}
     .thumb_list .thumb_img .txt_cart:before {width:16px;height:16px;}
     .thumb_list .thumb_info {padding:10px 0;}
