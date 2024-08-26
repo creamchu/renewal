@@ -221,6 +221,7 @@ select::-ms-expand {display:none;}
 .tbl_col .nodata {padding:100px 0;text-align:center;}
 .tbl_col .total {color:#7e192c;font-weight:700;}
 .tbl_col .red {color:#ff3636;font-size:17px;}
+.tbl_col .bgcolor {background-color:rgba(126, 25, 44, 0.06);}
 .tbl_col .bdl {border-left:1px solid rgba(0, 0, 0, 0.1) !important;}
 .tbl_col .bdb {border-bottom:1px solid rgba(0, 0, 0, 0.5) !important;}
 
@@ -342,7 +343,7 @@ select::-ms-expand {display:none;}
   .list_style > li {font-size:12px;line-height:18px;}
 
   /* list_dot */
-  .list_dot > li {font-size:16px;}
+  .list_dot > li {padding-left:8px;font-size:16px;}
   .list_dot > li + li {margin-top:3px;}
   .list_dot > li:before {top:10px;width:3px;height:3px;}
 
