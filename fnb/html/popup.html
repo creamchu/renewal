@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="keywords" content="BMW">
+	<meta name="description" content="BMW">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+	<title>F&amp;B - 번호입력팝업</title>
+	<!-- source// -->
+	<link rel="stylesheet" href="../css/reset.css">
+	<link rel="stylesheet" href="../css/swiper-bundle.min.css">
+	<link rel="stylesheet" href="../css/style.css">
+	<script src="../js/jquery_2.1.1.min.js"></script>
+	<script src="../js/swiper-bundle.min.js"></script>
+	<script src="../js/common.min.js"></script>
+	<!-- //source -->
+</head>
+
+<body>
+	
+	<div id="wrap">
+
+		<!-- S : header -->
+		<header class="header">
+			<div class="logo">
+				<img src="../img/logo.png" alt="">
+			</div>
+			<h1 class="h1_tit">팝업</h1>
+			<div class="util">
+				<a href="javascript:;" class="btn_close"><span class="hide">닫기</span></a>
+			</div>
+		</header>
+		<!-- E : header -->
+
+		<!-- S : content -->
+		<section class="content">
+
+			<!-- 목업용 버튼 -->
+			<button type="button" onclick="fn.popupOpen('#popup_tel')">팝업열기버튼</button>
+
+		</section>
+		<!-- E : content -->
+
+	</div>
+
+	<!-- popup --><!-- 2024-09-13 팝업 전체 수정 -->
+	<div id="popup_tel" class="popup">
+		<div class="popup_inner">
+			<form>
+				<fieldset>
+					<legend>휴대폰번호입력</legend>
+
+					<h1 class="popup_tit">휴대폰 인증</h1>
+					<div class="step1">
+						<p class="popup_desc">BMW Vantage 회원 인증 후 코인 사용이 가능합니다.</p>
+						<div class="keypad">
+							<input type="number" class="inp_num" readonly>
+							<div class="numbers">
+								<button type="button" class="btn_keypad">1</button>
+								<button type="button" class="btn_keypad">2</button>
+								<button type="button" class="btn_keypad">3</button>
+								<button type="button" class="btn_keypad">4</button>
+								<button type="button" class="btn_keypad">5</button>
+								<button type="button" class="btn_keypad">6</button>
+								<button type="button" class="btn_keypad">7</button>
+								<button type="button" class="btn_keypad">8</button>
+								<button type="button" class="btn_keypad">9</button>
+								<button type="button" class="btn_clear">Clear</button>
+								<button type="button" class="btn_keypad">0</button>
+								<button type="button" class="btn_del"><span class="hide">지우기</span></button>
+							</div>
+						</div>
+						<div class="popup_foot">
+							<button type="button" class="btn_close" onclick="fn.popupClose(this);">취소</button>
+							<button type="button" class="btn_send" disabled>확인</button><!-- 버튼 비활성화 : disabled 속성 추가 -->
+						</div>
+					</div>
+					<div class="step2" style="display:none;">
+						<p class="popup_desc">휴대폰으로 전송된 인증번호를 입력해주세요.</p>
+						<p class="certifytime"><span class="time">03:00</span></p>
+						<div class="keypad2">
+							<input type="number" class="inp_certify" readonly>
+							<div class="numbers">
+								<button type="button" class="btn_keypad">1</button>
+								<button type="button" class="btn_keypad">2</button>
+								<button type="button" class="btn_keypad">3</button>
+								<button type="button" class="btn_keypad">4</button>
+								<button type="button" class="btn_keypad">5</button>
+								<button type="button" class="btn_keypad">6</button>
+								<button type="button" class="btn_keypad">7</button>
+								<button type="button" class="btn_keypad">8</button>
+								<button type="button" class="btn_keypad">9</button>
+								<button type="button" class="btn_clear">Clear</button>
+								<button type="button" class="btn_keypad">0</button>
+								<button type="button" class="btn_del"><span class="hide">지우기</span></button>
+							</div>
+						</div>
+						<div class="popup_foot">
+							<button type="button" class="btn_close" onclick="fn.popupClose(this);">취소</button>
+							<button type="button" class="btn_confirm" disabled>인증번호 확인</button><!-- 버튼 비활성화 : disabled 속성 추가 -->
+						</div>
+					</div>
+				</fieldset>
+			</form>
+		</div>
+	</div>
+	<!-- //popup -->
+
+	<script>
+		$(".btn_send").on("click", function(){
+			$(".step1").hide();
+			$(".step2").show();
+		});
+		$(".btn_close").on("click", function(){
+			clearInterval(countdown);
+			$(".keypad .btn_clear").click();
+			$(".keypad2 .btn_clear").click();
+			$(".step1").show();
+			$(".step2").hide();
+		});
+		
+		var seconds; // 남은 시간 변수
+		var countdown; // 카운트다운을 관리하는 변수
+		var $timeSpan = $(".time"); // 시간을 표시할 요소
+		var $btnSend = $(".btn_send"); // "인증번호 받기" 버튼 요소
+
+		// 시간을 업데이트하고 화면에 표시하는 함수
+		var updateCountdown = function() {
+			console.log(seconds);
+				if (seconds >= 0) {
+						var minutes = Math.floor(seconds / 60);
+						var remainingSeconds = seconds % 60;
+						$timeSpan.text(`${minutes.toString().padStart(2, "0")}:${remainingSeconds.toString().padStart(2, "0")}`);
+						seconds--;
+				} else {
+						clearInterval(countdown);
+						//alert("인증번호 유효시간이 만료되었습니다.");
+						fn.popupClose('#popup_tel');
+				}
+		};
+
+		// "인증번호 받기" 버튼 클릭 이벤트 핸들러
+		$btnSend.on("click", function(e) {
+				e.preventDefault();
+				$btnSend.text("재전송");
+				//alert("인증번호가 발송되었습니다.");
+
+				clearInterval(countdown);
+				seconds = 180; // 3분(180초)
+
+				updateCountdown();
+				// 1초마다 카운트다운 업데이트
+				countdown = setInterval(updateCountdown, 1000); 
+		});
+	</script>
+
+</body>
+</html>
