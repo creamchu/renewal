@@ -70,7 +70,7 @@
 .productlist .images img {width:100%;max-width:22rem;}
 .productlist .tit {display:flex;align-items:center;justify-content:center;height:5rem;margin-top:2rem;font-size:2.2rem;line-height:1.2;}
 .productlist .price {display:block;margin-top:2rem;color:#ef243d;font-size:2.4rem;}
-.resultlist {overflow-y:scroll;}
+.resultlist {height:calc(100vh - 133.4rem);overflow-y:scroll;}
 .resultlist .nodata {padding:10rem 4rem;color:#ef243d;font-size:2rem;text-align:center;line-height:1.4;}
 .resultlist ul {width:100%;}
 .resultlist li {padding:4rem;border-bottom:1px solid #eaeaea;}
@@ -97,7 +97,7 @@
 .cart .allclear {padding:1.5rem 4rem;background:#eaeaea;}
 .cart .allclear .btn {display:flex;align-items:center;gap:0.5rem;background:#fff;padding:1rem 2rem;color:#9c9c9c;font-size:2rem;border-radius:3rem;}
 .cart .allclear .btn::before {content:"";display:inline-block;width:2.5rem;height:2.5rem;background:url("../img/btn_allclear.svg") no-repeat;filter:invert(78%) sepia(10%) saturate(0%) hue-rotate(133deg) brightness(100%) contrast(86%);}
-.cartlist {border-bottom:1px solid #eaeaea;overflow-y:scroll;}
+.cartlist {height:calc(100vh - 32.5rem);border-bottom:1px solid #eaeaea;overflow-y:scroll;}
 .cartlist ul {width:100%;}
 .cartlist li {display:flex;align-items:start;justify-content:space-between;padding:4rem;border-bottom:1px solid #eaeaea;}
 .cartlist .info {display:flex;position:relative;max-width:54%;}
