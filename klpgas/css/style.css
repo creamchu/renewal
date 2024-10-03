@@ -128,6 +128,20 @@
 .history2023 .imgmap .info dd {margin-top:4px;color:#565656;font-size:17px;line-height:22px;}
 .history2023 .imgmap .info .linebreak {display:block;}
 
+/* 히스토리 2024 */
+.history2024 .imgmap {margin-top:40px;}
+.history2024 .imgmap .flex {display:flex;gap:20px;justify-content:space-between;}
+.history2024 .imgmap .flex.flex_2 {align-items:center;gap:14px;}
+.history2024 .imgmap .flex.flex_2_2 {gap:14px;}
+.history2024 .imgmap .flex.flex_3 {margin-top:20px;}
+.history2024 .imgmap .flex.flex_4 {margin-top:20px;}
+.history2024 .imgmap .block_img_m {display:none;}
+.history2024 .imgmap .img_mo {display:none;}
+.history2024 .imgmap .info dt {color:#000;font-size:17px;}
+.history2024 .imgmap .info dt ~ dt {margin-top:12px;}
+.history2024 .imgmap .info dd {margin-top:4px;color:#565656;font-size:17px;line-height:22px;}
+.history2024 .imgmap .info .linebreak {display:block;}
+
 /* 히스토리 */
 .history .list_dot_small {margin-top:20px;}
 .history .list_dot_small li {margin-top:5px;padding-left:6px;color:#565656;line-height:28px;}
@@ -189,6 +203,19 @@
   .history2023 .imgmap .block_txt img {width:100%;}
   .history2023 .imgmap .img_pc {display:none;}
   .history2023 .imgmap .img_mo {display:block;}
+
+  /* 히스토리 2024 */
+  .history2024 .imgmap {width:705px;margin-left:auto;margin-right:auto;overflow:hidden;}
+  .history2024 .imgmap .col {display:flex;align-items:center;gap:20px;justify-content:space-between;}
+  .history2024 .imgmap .col img {max-width:100%;}
+  .history2024 .imgmap .flex {flex-direction:column;}
+  .history2024 .imgmap .flex_1 {flex-direction:column-reverse;margin-bottom:20px;}
+  .history2024 .imgmap .flex_2 {flex-direction:row;}
+  .history2024 .imgmap .block_img {display:none;}
+  .history2024 .imgmap .block_img_m {display:block;width:30%;}
+  .history2024 .imgmap .block_txt img {width:100%;}
+  .history2024 .imgmap .img_pc {display:none;}
+  .history2024 .imgmap .img_mo {display:block;}
 }
 
 /* MO : 767px이하 */
@@ -311,6 +338,21 @@
   .history2023 .imgmap .info dt ~ dt {margin-top:10px;}
   .history2023 .imgmap .info dd {margin-top:5px;font-size:13px;}
   .history2023 .imgmap .info .linebreak {display:inline;}
+
+  /* 히스토리 2024 */
+  .history2024 .imgmap {position:relative;width:100%;margin-top:30px;padding-top:220px;}
+  .history2024 .imgmap img {width:100%;}
+  .history2024 .imgmap .col {gap:12px;}
+  .history2024 .imgmap .flex {gap:12px;}
+  .history2024 .imgmap .flex_1 {margin-bottom:12px;}
+  .history2024 .imgmap .flex.flex_3 {margin-top:12px;}
+  .history2024 .imgmap .flex.flex_4 {margin-top:12px;}
+  .history2024 .imgmap .block_img {display:none;width:calc(32% - 6px);}
+  .history2024 .imgmap .info {position:absolute;top:0;}
+  .history2024 .imgmap .info dt {font-size:16px;}
+  .history2024 .imgmap .info dt ~ dt {margin-top:10px;}
+  .history2024 .imgmap .info dd {margin-top:5px;font-size:13px;}
+  .history2024 .imgmap .info .linebreak {display:inline;}
 
   /* 히스토리 */
   .history .list_dot_small {margin-top:12px;}
